@@ -5,6 +5,8 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
+import { SectionWrapper } from '../hoc';
+
 const ServiceCard = ({ title, icon, index }) => {
   return (
     <Tilt
@@ -72,4 +74,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About, "about")
