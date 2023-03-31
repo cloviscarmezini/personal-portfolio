@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas"
+
+import Lottie from "lottie-react";
+
+import {
+  Line,
+  LineSecondary,
+  heroAnimation
+} from "../assets";
 
 const Hero = () => {
   return (
@@ -9,29 +16,55 @@ const Hero = () => {
       className="relative w-full h-screen"
     >
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px]
-          max-w-7xl mx-auto flex flex-row items-start gap-5
-        `}
+        className={`${styles.paddingX} max-w-7xl mx-auto h-full`}
       >
-        <div className="flex flex-col items-center mt-5 justify-center">
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-20 h-full">
+          <div className="flex flex-row gap-5">
+            <div className="flex flex-col items-center mt-5 justify-center">
+              <div className="w-5 h-5 rounded-full bg-blue-500" />
+              <div className="w-1 sm:h-80 h-40 blue-gradient" />
+            </div>
 
-        <div>
-          <h1 className={styles.heroHeadText}>Hi, I'm {" "}
-            <span className="text-[#915eff]">
-              Clovis
-            </span>
-          </h1>
-          <p className={styles.heroSubText}>
-            I develop 3D visuals, user <br className="sm:block hidden"/>
-            interfaces and web applications
-          </p>
+            <div>
+              <h1 className={styles.heroHeadText}>Hi, I'm {" "}
+                <span className="text-blue-500">
+                  Clovis
+                </span>
+              </h1>
+              <p className={styles.heroSubText}>
+                I'm a programming lover & <br className="sm:block hidden"/>
+                technology enthusiastic.<br className="sm:block hidden"/>
+                Let's grab a <span className="text-blue-500">coffee?</span>
+              </p>
+            </div>
+          </div>
+          
+          <div className="flex justify-center items-center">
+            <Lottie
+              animationData={heroAnimation}
+              initialSegment={[15, 135]}
+              loop={false}
+              className="sm:h-1/2 h-[15rem]"
+            />
+          </div>
         </div>
       </div>
 
-      <ComputersCanvas />
+      <img
+        src={Line}
+        className="absolute bottom-0 left-0"
+        style={{
+          zIndex: -1
+        }}
+      />
+
+      <img
+        src={LineSecondary}
+        className="absolute top-0 right-0"
+        style={{
+          zIndex: -1
+        }}
+      />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
         <a href="#about">

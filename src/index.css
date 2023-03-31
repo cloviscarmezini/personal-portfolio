@@ -43,11 +43,33 @@
   );
 }
 
+.blue-gradient {
+  background: #5887FF;
+  background: linear-gradient(-90deg, #5887FF 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #5887FF 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
 .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
+
+.blue-pink-gradient {
+  background: "#5887FF";
+  background: linear-gradient(90.13deg, #5887FF 1.9%, #715AFF 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #5887FF 1.9%, #715AFF 97.5%);
+}
+
+/*.blue-pink-gradient {
+  background: "#2196f3";
+  background: linear-gradient(90.13deg, #2196f3 1.9%, #F231A5 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #2196f3 1.9%, #F231A5 97.5%);
+}*/
 
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */

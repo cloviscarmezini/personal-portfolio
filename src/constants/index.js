@@ -15,11 +15,11 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
+  logoTag,
+  logoEmutua,
+  logoVivo,
+  logoSesc,
+  onefortwo,
   jobit,
   tripguide,
   threejs,
@@ -44,18 +44,22 @@ const services = [
   {
     title: "Web Developer",
     icon: web,
+    description: ""
   },
   {
     title: "React Native Developer",
     icon: mobile,
+    description: ""
   },
   {
     title: "Backend Developer",
     icon: backend,
+    description: ""
   },
   {
     title: "Content Creator",
     icon: creator,
+    description: '(Coming soon)'
   },
 ];
 
@@ -116,56 +120,50 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Engineer",
+    company_name: "Tag Desenvolvimento",
+    icon: logoTag,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    date: "Feb 2017 - Aug 2021",
+    activities: [
+      "Prototyping, requirements analysis, database modeling and coding.",
+      "Development of Applications, APIs, Systems, E-commerces, Platforms, landing pages and websites.",
+      "Application deployment in cloud environments (AWS, Vercel).",
+      "Briefing, alignment and delivery meetings with clients."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    title: "Development Intern",
+    company_name: "SESC SP",
+    icon: logoSesc,
+    iconBg: "#ffffff",
+    date: "Mar 2020 - Dec 2020",
+    activities: [
+      "Maintenance of legacy systems.",
+      "Development of new systems."
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Frontend Developer",
+    company_name: "eMutua Digital",
+    icon: logoEmutua,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    date: "Sep 2021 - Mar 2023",
+    activities: [
+      "Maintenance on e-commerce platform.",
+      "Implementation of new features.",
+      "Maintenance and control of travel App versions, on Google Play and Apple Store.",
+      "Development of layouts and pages.",
+      "Daily, Sprint planning and Sprint review.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    title: "Digital Innovation Specialist",
+    company_name: "Vivo - Telefonica",
+    icon: logoVivo,
+    iconBg: "#ffffff",
+    date: "Starts at Apr 2023",
+    activities: [],
   },
 ];
 
@@ -198,68 +196,68 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "One For Two",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Awesome app to Students and personal trainers",
     tags: [
       {
-        name: "react",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Laravel",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Next JS",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: onefortwo,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "One For Two",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Awesome app to Students and personal trainers",
     tags: [
       {
-        name: "react",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Laravel",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Next JS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: onefortwo,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "One For Two",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Awesome app to Students and personal trainers",
     tags: [
       {
-        name: "nextjs",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Laravel",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Next JS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: onefortwo,
     source_code_link: "https://github.com/",
-  },
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
