@@ -18,6 +18,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import renders from "./projects/renders.png";
 import onefortwo from "./projects/onefortwo.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -61,6 +62,7 @@ export {
   typescript,
   threejs,
   onefortwo,
+  renders,
   jobit,
   tripguide,
   chromeIcon,

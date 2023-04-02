@@ -20,6 +20,7 @@ import {
   logoVivo,
   logoSesc,
   onefortwo,
+  renders,
   jobit,
   tripguide,
   threejs,
@@ -157,14 +158,14 @@ const experiences = [
       "Daily, Sprint planning and Sprint review.",
     ],
   },
-  {
-    title: "Digital Innovation Specialist",
-    company_name: "Vivo - Telefonica",
-    icon: logoVivo,
-    iconBg: "#ffffff",
-    date: "Starts at Apr 2023",
-    activities: [],
-  },
+  // {
+  //   title: "Digital Innovation Specialist",
+  //   company_name: "Vivo - Telefonica",
+  //   icon: logoVivo,
+  //   iconBg: "#ffffff",
+  //   date: "Starts at Apr 2023",
+  //   activities: [],
+  // },
 ];
 
 const testimonials = [
@@ -213,50 +214,31 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: onefortwo,
-    source_code_link: "https://github.com/",
+    image: onefortwo
   },
   {
-    name: "One For Two",
+    name: "Render's Academy",
     description:
       "Awesome app to Students and personal trainers",
     tags: [
       {
-        name: "React Native",
+        name: "Laravel",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PHP",
         color: "blue-text-gradient",
       },
       {
-        name: "Laravel",
+        name: "MySql",
         color: "green-text-gradient",
       },
       {
-        name: "Next JS",
-        color: "pink-text-gradient",
-      },
+        name: "Template Blade",
+        color: "text-orange-500",
+      }
     ],
-    image: onefortwo,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "One For Two",
-    description:
-      "Awesome app to Students and personal trainers",
-    tags: [
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Laravel",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next JS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: onefortwo,
-    source_code_link: "https://github.com/",
+    image: renders
   }
 ];
 

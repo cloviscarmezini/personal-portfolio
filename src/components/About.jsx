@@ -14,7 +14,7 @@ const ServiceCard = ({ title, description, icon, index }) => {
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full blue-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full p-[1px] rounded-[20px] hover:shadow-card hover:bg-gradient-to-b from-blue-500 to-purple-500"
       >
         <div
           options={{

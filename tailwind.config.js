@@ -13,14 +13,11 @@ module.exports = {
         "purple-500": "#715AFF"
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #715AFF11",
+        card: "0px 0px 140px -45px #715AFF33",
       },
       screens: {
         xs: "450px",
-      },
-      backgroundImage: {
-        "hero-pattern": "url('/src/assets/line-1.png')",
-      },
+      }
     },
   },
   plugins: [],
