@@ -13,6 +13,7 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import nextjs from "./tech/nextjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
@@ -21,6 +22,8 @@ import threejs from "./tech/threejs.svg";
 import renders from "./projects/renders.png";
 import onefortwo from "./projects/onefortwo.png";
 import freelarest from "./projects/freelarest.png";
+import uber from "./projects/uber.png";
+import instagram from "./projects/instagram.png";
 
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -61,6 +64,7 @@ export {
   javascript,
   mongodb,
   nodejs,
+  nextjs,
   reactjs,
   redux,
   tailwind,
@@ -79,5 +83,7 @@ export {
   apple,
   onefortwo,
   renders,
-  freelarest
+  freelarest,
+  uber,
+  instagram
 };

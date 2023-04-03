@@ -8,6 +8,7 @@ import {
   html,
   css,
   reactjs,
+  nextjs,
   redux,
   tailwind,
   nodejs,
@@ -20,12 +21,15 @@ import {
   logoVivo,
   logoSesc,
   onefortwo,
+  uber,
   renders,
   freelarest,
+  instagram,
   threejs,
   android,
   apple,
-  chromeIcon
+  chromeIcon,
+  github
 } from "../assets";
 
 export const navLinks = [
@@ -86,6 +90,10 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Redux Toolkit",
@@ -286,6 +294,62 @@ const projects = [
         url: "https://www.freelarest.com",
         icon: chromeIcon,
         color: "bg-white",
+        alt: "icon apple"
+      }
+    ]
+  },
+  {
+    name: "Uber clone",
+    description:
+      "A Uber mobile app clone.",
+    tags: [
+      {
+        name: "Expo",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Google Maps API",
+        color: "green-text-gradient",
+      }
+    ],
+    image: uber,
+    links: [
+      {
+        url: "https://github.com/cloviscarmezini/uber-clone",
+        icon: github,
+        color: "bg-gray-800",
+        alt: "icon apple"
+      }
+    ]
+  },
+  {
+    name: "Instagram clone",
+    description:
+      "A Instagram app clone.",
+    tags: [
+      {
+        name: "Expo",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Atomic Design",
+        color: "green-text-gradient",
+      }
+    ],
+    image: instagram,
+    links: [
+      {
+        url: "https://github.com/cloviscarmezini/instagram-clone",
+        icon: github,
+        color: "bg-gray-800",
         alt: "icon apple"
       }
     ]
