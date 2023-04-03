@@ -2,13 +2,12 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 
-import Lottie from "lottie-react";
-
 import {
   Line,
-  LineSecondary,
-  heroAnimation
+  LineSecondary
 } from "../assets";
+
+import { ProgrammerCanvas } from './canvas';
 
 const Hero = () => {
   return (
@@ -40,12 +39,7 @@ const Hero = () => {
           </div>
           
           <div className="flex justify-center items-center">
-            <Lottie
-              animationData={heroAnimation}
-              initialSegment={[15, 135]}
-              loop={false}
-              className="sm:h-1/2 h-[15rem]"
-            />
+            <ProgrammerCanvas />
           </div>
         </div>
       </div>
