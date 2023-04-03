@@ -33,6 +33,9 @@ import logoEmutua from './experiences/logo-emutua.svg';
 import logoVivo from './experiences/vivo.svg';
 import logoSesc from './experiences/sesc.jpeg';
 
+import android from './icons/android.png';
+import apple from './icons/apple.png';
+
 import heroAnimation from './animations/hero_animation3.json';
 
 import Line from "./line-1.png";
@@ -71,5 +74,7 @@ export {
   logoVivo,
   logoSesc,
   Line,
-  LineSecondary
+  LineSecondary,
+  android,
+  apple
 };

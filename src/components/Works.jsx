@@ -1,7 +1,4 @@
-import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
-
-import { github, chromeIcon } from '../assets';
 
 import { styles } from '../styles';
 import { projects } from '../constants';
@@ -14,93 +11,70 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
-  live_view_link,
+  links = [],
   index
 }) => {
   return (
-    <Tilt
-      options={{
-        max: 45,
-        scale: 1,
-        speed: 450
-      }}
-      className="sm:w-[360px] w-full"
+    <motion.div
+      variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
+      className="sm:w-[360px] w-full p-[1px] rounded-2xl hover:shadow-card hover:bg-gradient-to-b from-blue-500 to-purple-500"
     >
-      <motion.div
-        variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
-        className="p-[1px] rounded-2xl hover:shadow-card hover:bg-gradient-to-b from-blue-500 to-purple-500"
+      <div
+        className="bg-tertiary p-5 rounded-2xl"
       >
         <div
-          className="bg-tertiary p-5 rounded-2xl"
+          className="relative w-full h-[230px]"
         >
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-contain rounded-2xl"
+          />
+
           <div
-            className="relative w-full h-[230px]"
+            className="absolute top-0 right-0 flex justify-end flex-wrap m-3 card-img_hover gap-2 max-w-[120px]"
           >
-            <img
-              src={image}
-              alt={name}
-              className="w-full h-full object-contain rounded-2xl"
-            />
-
-            <div
-              className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2"
-            >
-              {live_view_link && (
-                <div
-                  onClick={() => window.open(live_view_link, "_blank")}
-                  className="black-gradient w-10 h-10 rounded-full
-                    flex justify-center items-center cursor-pointer"
-                >
-                  <img
-                    src={chromeIcon}
-                    alt="github icon"
-                    className="w-1/2 h-1/2 object-contain"
-                  />
-                </div>
-              )}
-              {live_view_link && (
-                <div
-                  onClick={() => window.open(source_code_link, "_blank")}
-                  className="black-gradient w-10 h-10 rounded-full
-                    flex justify-center items-center cursor-pointer"
-                >
-                  <img
-                    src={github}
-                    alt="github icon"
-                    className="w-1/2 h-1/2 object-contain"
-                  />
-                </div>
-              )}
-            </div>
-          </div>
-
-          <div className="mt-5">
-            <h3
-              className="text-white text-[24px]"
-            >
-              {name}
-            </h3>
-            <p
-              className="mt-2 text-secondary text-[14px]"
-            >
-              {description}
-            </p>
-          </div>
-
-          <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p
-                key={tag.name}
-                className={`text-[14px] ${tag.color}`}
+            {links.length ? links.map(link=>(
+              <div
+                onClick={() => window.open(link.url, "_blank")}
+                className={`w-10 h-10 rounded-full
+                  flex justify-center items-center cursor-pointer ${link.color}`}
               >
-                #{tag.name}
-              </p>
-            ))}
+                <img
+                  src={link.icon}
+                  alt={link.alt}
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            )) : <></>}
           </div>
         </div>
-      </motion.div>
-    </Tilt>
+
+        <div className="mt-5">
+          <h3
+            className="text-white text-[24px]"
+          >
+            {name}
+          </h3>
+          <p
+            className="mt-2 text-secondary text-[14px]"
+          >
+            {description}
+          </p>
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p
+              key={tag.name}
+              className={`text-[14px] ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+      </div>
+    </motion.div>
   )
 }
 
@@ -120,10 +94,7 @@ const Works = () => {
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my ability
-          to solve complex problems, work with different technologies, and
-          manage projects effectively.
+          real-world examples of my work.
         </motion.p>
       </div>
 

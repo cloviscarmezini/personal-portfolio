@@ -21,9 +21,10 @@ import {
   logoSesc,
   onefortwo,
   renders,
-  jobit,
-  tripguide,
   threejs,
+  android,
+  apple,
+  chromeIcon
 } from "../assets";
 
 export const navLinks = [
@@ -198,8 +199,7 @@ const testimonials = [
 const projects = [
   {
     name: "One For Two",
-    description:
-      "Awesome app to Students and personal trainers",
+    description: "A fitness app for scheduling classes, accessing workouts, direct instructor communication, and modifying fitness plans.",
     tags: [
       {
         name: "React Native",
@@ -214,12 +214,32 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: onefortwo
+    image: onefortwo,
+    links: [
+      {
+        url: "https://www.personaisonefortwo.com.br",
+        icon: chromeIcon,
+        color: "bg-white",
+        alt: "icon chrome"
+      },
+      {
+        url: "https://play.google.com/store/apps/details?id=com.onefortwo",
+        icon: android,
+        color: "bg-white",
+        alt: "icon android"
+      },
+      {
+        url: "https://play.google.com/store/apps/details?id=com.onefortwo",
+        icon: apple,
+        color: "bg-white",
+        alt: "icon apple"
+      }
+    ]
   },
   {
     name: "Render's Academy",
     description:
-      "Awesome app to Students and personal trainers",
+      "A online courses platform for Cinema 4D, providing users with access to quality educational content.",
     tags: [
       {
         name: "Laravel",
@@ -238,7 +258,8 @@ const projects = [
         color: "text-orange-500",
       }
     ],
-    image: renders
+    image: renders,
+    links: []
   }
 ];
 
