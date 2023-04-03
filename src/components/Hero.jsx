@@ -31,8 +31,8 @@ const Hero = () => {
                 </span>
               </h1>
               <p className={styles.heroSubText}>
-                I'm a programming lover & <br className="sm:block hidden"/>
-                technology enthusiastic.<br className="sm:block hidden"/>
+                I'm a programming lover & <br/>
+                technology enthusiastic.<br/>
                 Let's grab a <span className="text-blue-500">coffee?</span>
               </p>
             </div>

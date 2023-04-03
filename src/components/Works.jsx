@@ -28,7 +28,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-contain rounded-2xl"
+            className="w-full h-full object-cover sm:object-contain rounded-2xl"
           />
 
           <div
