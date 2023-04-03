@@ -55,10 +55,9 @@ const Contact = () => {
 
     try {
       setIsLoading(true);
+
       const notification = toast.loading('Sending...');
-
-      await new Promise(resolve=>setTimeout(() => resolve(), 3000))
-
+      
       await send(
         emailJsKeys.serviceId,
         emailJsKeys.templateId,
