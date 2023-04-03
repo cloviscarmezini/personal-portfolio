@@ -9,39 +9,35 @@ import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ title, description, icon, index }) => {
   return (
-    <Tilt
-      className="xs:w-[250px] w-full"
+    <motion.div
+      variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+      className="xs:w-[250px] w-full p-[1px] rounded-[20px] hover:shadow-card hover:bg-gradient-to-b from-blue-500 to-purple-500"
     >
-      <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full p-[1px] rounded-[20px] hover:shadow-card hover:bg-gradient-to-b from-blue-500 to-purple-500"
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450
+        }}
+        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-center items-center flex-col"
       >
-        <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450
-          }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-center items-center flex-col"
+        <img
+          src={icon}
+          alt={title}
+          className="w-16 h-16 object-contain mb-5"
+        />
+        <h3
+          className="text-white text-[20px] font-bold text-center leading-[1.3]"
         >
-          <img
-            src={icon}
-            alt={title}
-            className="w-16 h-16 object-contain mb-5"
-          />
-          <h3
-            className="text-white text-[20px] font-bold text-center leading-[1.3]"
-          >
-            {title}
-          </h3>
-          <h5
-            className="text-white text-sm font-thin text-center"
-          >
-            {description || <span>&nbsp;</span>}
-          </h5>
-        </div>
-      </motion.div>
-    </Tilt>
+          {title}
+        </h3>
+        <h5
+          className="text-white text-sm font-thin text-center"
+        >
+          {description || <span>&nbsp;</span>}
+        </h5>
+      </div>
+    </motion.div>
   )
 }
 
@@ -52,7 +48,7 @@ const About = () => {
         variants={textVariant()}
       >
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Overview<span className="text-blue-500">.</span></h2>
       </motion.div>
 
       <motion.p
