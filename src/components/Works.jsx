@@ -57,7 +57,7 @@ const ProjectCard = ({
             {name}
           </h3>
           <p
-            className="mt-2 text-secondary text-[14px]"
+            className="mt-2 text-secondary text-[14px] min-h-[63px]"
           >
             {description}
           </p>

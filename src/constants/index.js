@@ -21,6 +21,7 @@ import {
   logoSesc,
   onefortwo,
   renders,
+  freelarest,
   threejs,
   android,
   apple,
@@ -260,6 +261,34 @@ const projects = [
     ],
     image: renders,
     links: []
+  },
+  {
+    name: "Freelarest",
+    description:
+      "A platform for publishing and hiring freelancers for bars and restaurants.",
+    tags: [
+      {
+        name: "Laravel",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Next JS",
+        color: "green-text-gradient",
+      }
+    ],
+    image: freelarest,
+    links: [
+      {
+        url: "https://www.freelarest.com",
+        icon: chromeIcon,
+        color: "bg-white",
+        alt: "icon apple"
+      }
+    ]
   }
 ];
 

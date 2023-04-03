@@ -20,6 +20,8 @@ import threejs from "./tech/threejs.svg";
 
 import renders from "./projects/renders.png";
 import onefortwo from "./projects/onefortwo.png";
+import freelarest from "./projects/freelarest.png";
+
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -64,8 +66,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  onefortwo,
-  renders,
   jobit,
   tripguide,
   chromeIcon,
@@ -76,5 +76,8 @@ export {
   Line,
   LineSecondary,
   android,
-  apple
+  apple,
+  onefortwo,
+  renders,
+  freelarest
 };
