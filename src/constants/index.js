@@ -168,14 +168,14 @@ const experiences = [
       "Daily, Sprint planning and Sprint review.",
     ],
   },
-  // {
-  //   title: "Digital Innovation Specialist",
-  //   company_name: "Vivo - Telefonica",
-  //   icon: logoVivo,
-  //   iconBg: "#ffffff",
-  //   date: "Starts at Apr 2023",
-  //   activities: [],
-  // },
+  {
+    title: "Digital Innovation Specialist",
+    company_name: "Vivo - Telefonica",
+    icon: logoVivo,
+    iconBg: "#ffffff",
+    date: "Apr 2023 - current",
+    activities: [],
+  },
 ];
 
 const testimonials = [
@@ -229,19 +229,19 @@ const projects = [
         url: "https://www.personaisonefortwo.com.br",
         icon: chromeIcon,
         color: "bg-white",
-        alt: "icon chrome"
+        alt: "Access Website"
       },
       {
         url: "https://play.google.com/store/apps/details?id=com.onefortwo",
         icon: android,
         color: "bg-white",
-        alt: "icon android"
+        alt: "Access Google Play"
       },
       {
         url: "https://play.google.com/store/apps/details?id=com.onefortwo",
         icon: apple,
         color: "bg-white",
-        alt: "icon apple"
+        alt: "Access Apple Store"
       }
     ]
   },
@@ -294,7 +294,7 @@ const projects = [
         url: "https://www.freelarest.com",
         icon: chromeIcon,
         color: "bg-white",
-        alt: "icon apple"
+        alt: "Access Website"
       }
     ]
   },
@@ -322,7 +322,7 @@ const projects = [
         url: "https://github.com/cloviscarmezini/uber-clone",
         icon: github,
         color: "bg-gray-800",
-        alt: "icon apple"
+        alt: "Access Github"
       }
     ]
   },
@@ -350,7 +350,7 @@ const projects = [
         url: "https://github.com/cloviscarmezini/instagram-clone",
         icon: github,
         color: "bg-gray-800",
-        alt: "icon apple"
+        alt: "Access Github"
       }
     ]
   }

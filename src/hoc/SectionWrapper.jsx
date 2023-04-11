@@ -16,7 +16,7 @@ function HOC() {
             }}
             className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
         >
-            <span className="hash-span" id={idName}/>
+            <span className="hash-span" tabIndex={-1} aria-hidden={true} id={idName}/>
             <Component />
         </motion.section>
     )

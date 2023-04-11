@@ -11,7 +11,7 @@ import { ProgrammerCanvas } from './canvas';
 
 const Hero = () => {
   return (
-    <section
+    <header
       className="relative w-full h-screen"
     >
       <div
@@ -47,6 +47,9 @@ const Hero = () => {
       <img
         src={Line}
         className="absolute bottom-0 left-0"
+        aria-hidden={true}
+        tabIndex={-1}
+        alt=""
         style={{
           zIndex: -1
         }}
@@ -54,6 +57,9 @@ const Hero = () => {
 
       <img
         src={LineSecondary}
+        aria-hidden={true}
+        tabIndex={-1}
+        alt=""
         className="absolute top-0 right-0"
         style={{
           zIndex: -1
@@ -61,7 +67,7 @@ const Hero = () => {
       />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
-        <a href="#about">
+        <a href="#about" aria-label="Go to About section">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
@@ -77,7 +83,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
-    </section>
+    </header>
   )
 }
 

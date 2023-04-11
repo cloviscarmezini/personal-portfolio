@@ -27,7 +27,7 @@ const Navbar = () => {
         >
           <img
             src={logo}
-            alt="logo"
+            alt="clovis carmezini's name and a cup of coffee"
             className="h-9 object-contain"
           />
         </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
             onClick={() => setToggle(toggle=>!toggle)}
           />
 
-          <div className={`${toggle ? 'flex' : 'hidden'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gradient-to-b from-blue-500 to-purple-500 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
             <ul
               className="list-none flex flex-col gap-4 justify-end items-start"
             >

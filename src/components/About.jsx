@@ -23,7 +23,9 @@ const ServiceCard = ({ title, description, icon, index }) => {
       >
         <img
           src={icon}
-          alt={title}
+          aria-hidden={true}
+          tabIndex={-1}
+          alt=""
           className="w-16 h-16 object-contain mb-5"
         />
         <h3
@@ -31,11 +33,11 @@ const ServiceCard = ({ title, description, icon, index }) => {
         >
           {title}
         </h3>
-        <h5
+        <h4
           className="text-white text-sm font-thin text-center"
         >
           {description || <span>&nbsp;</span>}
-        </h5>
+        </h4>
       </div>
     </motion.div>
   )

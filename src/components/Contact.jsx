@@ -94,6 +94,7 @@ const Contact = () => {
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div className="flex-[0.75] rounded-2xl p-[1px] focus-within:shadow-card focus-within:bg-gradient-to-b from-blue-500 to-purple-500">
         <div
+          role="form"
           variants={slideIn('left', 'tween', 0.2, 1)}
           className="bg-tertiary p-8 rounded-2xl"
         >
