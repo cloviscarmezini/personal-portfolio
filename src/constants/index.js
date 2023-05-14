@@ -238,7 +238,7 @@ const projects = [
         alt: "Access Google Play"
       },
       {
-        url: "https://play.google.com/store/apps/details?id=com.onefortwo",
+        url: "https://apps.apple.com/br/app/one-for-two/id6448317590?l=en",
         icon: apple,
         color: "bg-white",
         alt: "Access Apple Store"
