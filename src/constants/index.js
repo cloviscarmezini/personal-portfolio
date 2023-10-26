@@ -169,12 +169,16 @@ const experiences = [
     ],
   },
   {
-    title: "Digital Innovation Specialist",
+    title: "Tech Lead - Digital Innovation Specialist",
     company_name: "Vivo - Telefonica",
     icon: logoVivo,
     iconBg: "#ffffff",
     date: "Apr 2023 - current",
-    activities: [],
+    activities: [
+      "Leading the Squad in the development and maintenance of the meditation app.",
+      "Collaborating on the implementation of new features and improvements. Streamlining processes to enhance service efficiency.",
+      "Utilizing technologies such as React Native, Java microservices, Node.js with the Nest framework, and RabbitMQ."
+    ],
   },
 ];
 
