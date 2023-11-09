@@ -175,9 +175,9 @@ const experiences = [
     iconBg: "#ffffff",
     date: "Apr 2023 - current",
     activities: [
-      "Leading the Squad in the development and maintenance of the meditation app.",
-      "Collaborating on the implementation of new features and improvements. Streamlining processes to enhance service efficiency.",
-      "Utilizing technologies such as React Native, Java microservices, Node.js with the Nest framework, and RabbitMQ."
+      "Leading a squad of a Meditation APP, I collaborated to maintain, developing new features, problem-solving and enhancements.",
+      "I also made significant contributions to cost reduction and process improvement, resulting in up to a 70% reduction in activity execution time.",
+      "Technologies: React Native, Java microservices, Node.js with the Nest framework, and RabbitMQ."
     ],
   },
 ];
