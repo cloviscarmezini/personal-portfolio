@@ -4,12 +4,17 @@ import { styles } from "../styles";
 
 import {
   Line,
-  LineSecondary
+  LineSecondary,
+  githubSvg,
+  linkedin
 } from "../assets";
 
 import { ProgrammerCanvas } from './canvas';
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const [translate] = useTranslation();
+
   return (
     <header
       className="relative w-full h-screen"
@@ -25,7 +30,7 @@ const Hero = () => {
             </div>
 
             <div>
-              <h1 className={styles.heroHeadText}>Hi, I'm {" "}
+              <h1 className={styles.heroHeadText}>{translate('hero.greetings')} {" "}
                 <span className="text-blue-500">
                   Clovis
                 </span>
@@ -35,6 +40,24 @@ const Hero = () => {
                 technology enthusiastic.<br/>
                 Let's grab a <span className="text-blue-500">coffee?</span>
               </p>
+              <div className="mt-2 flex row gap-4">
+                <a className="cursor-pointer" href="https://www.linkedin.com/in/clovis-carmezini-junior-45a445100/" target="_blank">
+                  <div className="flex row items-center gap-2">
+                    <img src={linkedin} className="w-3 invert" alt="linkedin"/>
+                    <p className="text-md">
+                      LinkedIn
+                    </p>
+                  </div>
+                </a>
+                <a className="cursor-pointer" href="https://github.com/cloviscarmezini" target="_blank">
+                  <div className="flex row items-center gap-2">
+                    <img src={githubSvg} className="w-4 invert" alt="github" />
+                    <p className="text-md">
+                      GitHub
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           

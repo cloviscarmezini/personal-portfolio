@@ -1,6 +1,8 @@
 import logo from "./logo.png";
 import github from "./github.png";
 import menu from "./menu.svg";
+import lock from "./lock.svg";
+import lock2 from "./lock-2.svg";
 import close from "./close.svg";
 import chromeIcon from "./chrome-icon.svg";
 
@@ -19,11 +21,16 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import linkedin from "./linkedin.svg";
+import githubSvg from "./github.svg";
+
 import renders from "./projects/renders.png";
 import onefortwo from "./projects/onefortwo.png";
+import atmaMeditation from "./projects/atma.png";
 import freelarest from "./projects/freelarest.png";
 import uber from "./projects/uber.png";
 import instagram from "./projects/instagram.png";
+import avell from "./projects/avell.png";
 
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -84,6 +91,12 @@ export {
   onefortwo,
   renders,
   freelarest,
+  avell,
+  atmaMeditation,
   uber,
-  instagram
+  instagram,
+  lock,
+  lock2,
+  githubSvg,
+  linkedin
 };

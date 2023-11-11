@@ -29,7 +29,9 @@ import {
   android,
   apple,
   chromeIcon,
-  github
+  github,
+  atmaMeditation,
+  avell
 } from "../assets";
 
 export const navLinks = [
@@ -49,6 +51,11 @@ export const navLinks = [
 
 const services = [
   {
+    title: "Tech Lead",
+    icon: creator,
+    description: ''
+  },
+  {
     title: "Web Developer",
     icon: web,
     description: ""
@@ -62,12 +69,7 @@ const services = [
     title: "Backend Developer",
     icon: backend,
     description: ""
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-    description: '(Coming soon)'
-  },
+  }
 ];
 
 const technologies = [
@@ -175,9 +177,9 @@ const experiences = [
     iconBg: "#ffffff",
     date: "Apr 2023 - current",
     activities: [
-      "Leading a squad of a Meditation APP, I collaborated to maintain, developing new features, problem-solving and enhancements.",
-      "I also made significant contributions to cost reduction and process improvement, resulting in up to a 70% reduction in activity execution time.",
-      "Technologies: React Native, Java microservices, Node.js with the Nest framework, and RabbitMQ."
+      "As the leader of a meditation app squad, I collaborate in its maintenance, development of new features, problem-solving and enhancements.",
+      "I have also made significant contributions to cost reduction and process improvement, resulting in up to 70% drop in activity execution time.",
+      "Technologies: React Native, MongoDB,  Microservices,  Java,  Node.js with the Nest framework, RabbitMQ,  GCP, BigQuery."
     ],
   },
 ];
@@ -211,8 +213,10 @@ const testimonials = [
 
 const projects = [
   {
+    id: "0968a04c-d84f-4966-8eb6-9debb015e362",
     name: "One For Two",
     description: "A fitness app for scheduling classes, accessing workouts, direct instructor communication, and modifying fitness plans.",
+    type: 'personal',
     tags: [
       {
         name: "React Native",
@@ -246,11 +250,87 @@ const projects = [
         icon: apple,
         color: "bg-white",
         alt: "Access Apple Store"
+      },
+      {
+        url: "-",
+        icon: github,
+        color: "bg-gray-800",
+        alt: "Access Website",
+        disabledColor: 'dark',
+        disabled: true
+      },
+    ]
+  },
+  {
+    id: "bc179a01-700f-4ca4-b020-3d8ba5bc3dd4",
+    name: "Atma Meditação",
+    type: 'collaborate',
+    description: "A meditation, health and well-being app. As a team member (Tech Lead and Developer) I collaborate in several parts of this project.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node-JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Java",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: atmaMeditation,
+    links: [
+      {
+        url: "https://www.atmameditacao.com.br",
+        icon: chromeIcon,
+        color: "bg-white",
+        alt: "Access Website"
+      },
+      {
+        url: "https://play.google.com/store/apps/details?id=com.movile.meditation.vivo&hl=pt_BR&gl=US",
+        icon: android,
+        color: "bg-white",
+        alt: "Access Google Play"
+      },
+      {
+        url: "https://apps.apple.com/br/app/atma-medita%C3%A7%C3%A3o-e-bem-estar/id1229827447",
+        icon: apple,
+        color: "bg-white",
+        alt: "Access Apple Store"
+      },
+    ]
+  },
+  {
+    id: "883e01e0-8dcf-42c4-9e20-73d31de689f8",
+    name: "Avell",
+    type: 'collaborate',
+    description: "A e-commerce focused on selling high-performance notebooks. As a frontend team member I collaborate in several parts of this project.",
+    tags: [
+      {
+        name: "React JS",
+        color: "green-text-gradient",
+      }
+    ],
+    image: avell,
+    links: [
+      {
+        url: "https://avell.com.br",
+        icon: chromeIcon,
+        color: "bg-white",
+        alt: "Access Website"
       }
     ]
   },
   {
+    id: "6c2fd046-7676-46bf-b7cf-bffb50383388",
     name: "Render's Academy",
+    type: 'personal',
     description:
       "A online courses platform for Cinema 4D, providing users with access to quality educational content.",
     tags: [
@@ -271,11 +351,29 @@ const projects = [
         color: "text-orange-500",
       }
     ],
+    deprecated: true,
     image: renders,
-    links: []
+    links: [
+      {
+        url: "https://www.rendersacademy.com.br",
+        icon: chromeIcon,
+        color: "bg-white",
+        alt: "Access Website"
+      },
+      {
+        url: "-",
+        icon: github,
+        color: "bg-gray-800",
+        alt: "Access Website",
+        disabledColor: 'dark',
+        disabled: true
+      },
+    ]
   },
   {
+    id: "964ded32-8053-492d-a9c3-240a8e6870bb",
     name: "Freelarest",
+    type: 'personal',
     description:
       "A platform for publishing and hiring freelancers for bars and restaurants.",
     tags: [
@@ -292,6 +390,7 @@ const projects = [
         color: "green-text-gradient",
       }
     ],
+    deprecated: true,
     image: freelarest,
     links: [
       {
@@ -299,11 +398,21 @@ const projects = [
         icon: chromeIcon,
         color: "bg-white",
         alt: "Access Website"
-      }
+      },
+      {
+        url: "",
+        icon: github,
+        color: "bg-gray-800",
+        alt: "Access Website",
+        disabledColor: 'dark',
+        disabled: true
+      },
     ]
   },
   {
+    id: "3a639afa-0eb2-45c1-9f27-651dfe9f575d",
     name: "Uber clone",
+    type: 'personal',
     description:
       "A Uber mobile app clone.",
     tags: [
@@ -331,7 +440,9 @@ const projects = [
     ]
   },
   {
+    id: "f66b5683-bae1-42db-9811-093dc43cfa96",
     name: "Instagram clone",
+    type: 'personal',
     description:
       "A Instagram app clone.",
     tags: [
