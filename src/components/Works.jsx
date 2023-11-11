@@ -23,26 +23,28 @@ project
 
   return (
     <div
-      className="sm:w-[360px] w-full p-[1px] rounded-2xl hover:shadow-card hover:bg-gradient-to-b from-blue-500 to-purple-500 relative"
+      className="sm:w-[360px] w-full p-[1px] rounded-[30px] hover:shadow-card hover:bg-gradient-to-b from-blue-500 to-purple-500 relative"
     >
-      { deprecated && (
-        <div className="absolute top-6 left-5 z-10">
-          <div className="center relative inline-block select-none whitespace-nowrap rounded-lg bg-pink-500 py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white">
-            DEPRECATED 😢
-          </div>
-        </div>
-      )}
       <div
-        className="bg-tertiary p-5 rounded-2xl"
+        className="bg-tertiary p-[20px] rounded-[30px]"
       >
         <div
           className="relative w-full h-[230px]"
         >
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover sm:object-contain rounded-2xl"
-          />
+          <div className="rounded-[10px] overflow-hidden relative">
+            {deprecated && (
+              <div className="absolute top-0 left-0 z-10">
+                <div className="center relative inline-block select-none whitespace-nowrap rounded-br-[10px] bg-pink-500 py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white">
+                  DEPRECATED 😢
+                </div>
+              </div>
+            )}
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover sm:object-contain"
+            />
+          </div>
 
           <div
             className="absolute top-0 right-0 flex justify-end flex-wrap m-3 card-img_hover gap-2 max-w-[120px]"
