@@ -38,7 +38,7 @@ const Hero = () => {
               <p className={styles.heroSubText}>
                 I'm a programming lover & <br/>
                 technology enthusiastic.<br/>
-                Let's grab a <span className="text-blue-500">coffee?</span>
+                How about a cup of <span className="text-blue-500">coffee?</span>
               </p>
               <div className="mt-2 flex row gap-4">
                 <a className="cursor-pointer" href="https://www.linkedin.com/in/clovis-carmezini-junior-45a445100/" target="_blank">

@@ -133,6 +133,32 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Tech Lead - Digital Innovation Specialist",
+    company_name: "Vivo - Telefonica",
+    icon: logoVivo,
+    iconBg: "#ffffff",
+    date: "Apr 2023 - current",
+    activities: [
+      "As the leader of a meditation app squad, I collaborate in its maintenance, development of new features, problem-solving and enhancements.",
+      "I have also made significant contributions to cost reduction and process improvement, resulting in up to 70% drop in activity execution time.",
+      "Technologies: React Native, MongoDB,  Microservices,  Java,  Node.js with the Nest framework, RabbitMQ,  GCP, BigQuery."
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "eMutua Digital",
+    icon: logoEmutua,
+    iconBg: "#383E56",
+    date: "Sep 2021 - Mar 2023",
+    activities: [
+      "Maintenance on e-commerce platform.",
+      "Implementation of new features.",
+      "Maintenance and control of travel App versions, on Google Play and Apple Store.",
+      "Development of layouts and pages.",
+      "Daily, Sprint planning and Sprint review.",
+    ],
+  },
+  {
     title: "Software Engineer",
     company_name: "Tag Desenvolvimento",
     icon: logoTag,
@@ -154,32 +180,6 @@ const experiences = [
     activities: [
       "Maintenance of legacy systems.",
       "Development of new systems."
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    company_name: "eMutua Digital",
-    icon: logoEmutua,
-    iconBg: "#383E56",
-    date: "Sep 2021 - Mar 2023",
-    activities: [
-      "Maintenance on e-commerce platform.",
-      "Implementation of new features.",
-      "Maintenance and control of travel App versions, on Google Play and Apple Store.",
-      "Development of layouts and pages.",
-      "Daily, Sprint planning and Sprint review.",
-    ],
-  },
-  {
-    title: "Tech Lead - Digital Innovation Specialist",
-    company_name: "Vivo - Telefonica",
-    icon: logoVivo,
-    iconBg: "#ffffff",
-    date: "Apr 2023 - current",
-    activities: [
-      "As the leader of a meditation app squad, I collaborate in its maintenance, development of new features, problem-solving and enhancements.",
-      "I have also made significant contributions to cost reduction and process improvement, resulting in up to 70% drop in activity execution time.",
-      "Technologies: React Native, MongoDB,  Microservices,  Java,  Node.js with the Nest framework, RabbitMQ,  GCP, BigQuery."
     ],
   },
 ];
