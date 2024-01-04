@@ -265,7 +265,7 @@ const projects = [
     id: "bc179a01-700f-4ca4-b020-3d8ba5bc3dd4",
     name: "Atma Meditação",
     type: 'collaborate',
-    description: "A meditation, health and well-being app. As a team member (Tech Lead and Developer) I collaborate in several parts of this project.",
+    description: "A meditation, health and wellness app. As a team member (Tech Lead and Developer) I collaborate in several parts of this project.",
     tags: [
       {
         name: "React Native",
