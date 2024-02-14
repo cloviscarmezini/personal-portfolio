@@ -35,7 +35,7 @@ project
             {deprecated && (
               <div className="absolute top-0 left-0 z-10">
                 <div className="center relative inline-block select-none whitespace-nowrap rounded-br-[10px] bg-pink-500 py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white">
-                  DEPRECATED 😢
+                  UNAVAILABLE 😢
                 </div>
               </div>
             )}
