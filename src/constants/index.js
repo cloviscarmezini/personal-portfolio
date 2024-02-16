@@ -25,6 +25,7 @@ import {
   renders,
   freelarest,
   instagram,
+  tinder,
   threejs,
   android,
   apple,
@@ -463,6 +464,28 @@ const projects = [
     links: [
       {
         url: "https://github.com/cloviscarmezini/instagram-clone",
+        icon: github,
+        color: "bg-gray-800",
+        alt: "Access Github"
+      }
+    ]
+  },
+  {
+    id: "f66b5683-bae1-42db-9811-093dc43cfa96",
+    name: "Tinder clone",
+    type: 'personal',
+    description:
+      "A Tinder app clone.",
+    tags: [
+      {
+        name: "Swift",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: tinder,
+    links: [
+      {
+        url: "https://github.com/cloviscarmezini/tinder-clone-ios",
         icon: github,
         color: "bg-gray-800",
         alt: "Access Github"

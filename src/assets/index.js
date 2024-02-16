@@ -30,6 +30,7 @@ import atmaMeditation from "./projects/atma.png";
 import freelarest from "./projects/freelarest.png";
 import uber from "./projects/uber.png";
 import instagram from "./projects/instagram.png";
+import tinder from "./projects/tinder.png";
 import avell from "./projects/avell.png";
 
 import jobit from "./jobit.png";
@@ -95,6 +96,7 @@ export {
   atmaMeditation,
   uber,
   instagram,
+  tinder,
   lock,
   lock2,
   githubSvg,
