@@ -480,6 +480,10 @@ const projects = [
       {
         name: "Swift",
         color: "pink-text-gradient",
+      },
+      {
+        name: "Storyboard",
+        color: "green-text-gradient",
       }
     ],
     image: tinder,
