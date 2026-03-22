@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 
 import {
@@ -12,6 +10,7 @@ import {
 import { ProgrammerCanvas } from './canvas';
 import { useTranslation } from "react-i18next";
 import { useExperiment } from "@statsig/react-bindings";
+import { ScrollDownButton } from "./canvas/ScrollDownButton";
 
 
 const EXPERIMENT_GROUP_NAME = 'test_ab'
@@ -51,7 +50,7 @@ const Hero = () => {
               <div className="mt-2 flex row gap-4">
                 <a className="cursor-pointer" href="https://www.linkedin.com/in/cloviscarmezini/" target="_blank">
                   <div className="flex row items-center gap-2">
-                    <img src={linkedin} className="w-3 invert" alt="linkedin" />
+                    <img src={linkedin} className="w-3 invert" aria-hidden={true} />
                     <p className="text-md">
                       LinkedIn
                     </p>
@@ -59,7 +58,7 @@ const Hero = () => {
                 </a>
                 <a className="cursor-pointer" href="https://github.com/cloviscarmezini" target="_blank">
                   <div className="flex row items-center gap-2">
-                    <img src={githubSvg} className="w-4 invert" alt="github" />
+                    <img src={githubSvg} className="w-4 invert" aria-hidden={true} />
                     <p className="text-md">
                       GitHub
                     </p>
@@ -98,21 +97,7 @@ const Hero = () => {
       />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
-        <a href="#about" aria-label="Go to About section">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.div
-              animate={{
-                y: [0, 24, 0]
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: 'infinity',
-                repeatType: 'loop'
-              }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />
-          </div>
-        </a>
+        <ScrollDownButton href="#about" ariaLabel="Go to About section" />
       </div>
     </header>
   )

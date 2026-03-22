@@ -8,8 +8,9 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 import "react-vertical-timeline-component/style.min.css";
+import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
-const ExperienceCard = ({ experience,  index }) => {
+const ExperienceCard = ({ experience, index }) => {
   return (
     <VerticalTimelineElement
       className="timeline-element"
@@ -45,7 +46,7 @@ const ExperienceCard = ({ experience,  index }) => {
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        { experience.activities.map((activity, index) => (
+        {experience.activities.map((activity, index) => (
           <li
             key={`experience-point-${index}`}
             className="text-white-100 text-[14px] pl-1 tracking-wider"
@@ -59,6 +60,7 @@ const ExperienceCard = ({ experience,  index }) => {
 }
 
 const Experience = () => {
+  const reducedMotion = usePrefersReducedMotion();
   return (
     <>
       <motion.div
@@ -71,9 +73,9 @@ const Experience = () => {
       <div
         className="mt-20 flex flex-col"
       >
-        <VerticalTimeline>
-          { experiences.map((experience, index) => (
-            <ExperienceCard experience={experience}  index={index}/>
+        <VerticalTimeline animate={!reducedMotion}>
+          {experiences.map((experience, index) => (
+            <ExperienceCard experience={experience} index={index} />
           ))}
         </VerticalTimeline>
       </div>

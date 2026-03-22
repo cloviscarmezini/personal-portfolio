@@ -8,9 +8,10 @@ import { lock } from '../assets';
 
 import { SectionWrapper } from '../hoc';
 import { useState } from 'react';
+import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion';
 
 const ProjectCard = ({
-project
+  project
 }) => {
   const {
     name,
@@ -49,16 +50,16 @@ project
           <div
             className="absolute top-0 right-0 flex justify-end flex-wrap m-3 card-img_hover gap-2 max-w-[120px]"
           >
-            {links.length ? links.map(link=>(
+            {links.length ? links.map(link => (
               <div
                 onClick={() => {
-                  if(!link.disabled)
-                  window.open(link.url, "_blank")
+                  if (!link.disabled)
+                    window.open(link.url, "_blank")
                 }}
                 className={`w-10 h-10 rounded-full
                   flex justify-center items-center ${link.color} ${link.disabled ? 'cursor-not-allowed' : 'cursor-pointer'}`}
               >
-                { link.disabled && 
+                {link.disabled &&
                   <div className={`absolute bottom-0 right-0 p-[3px] rounded-full ${link.color}`}>
                     <img src={lock} className={`w-3 ${link.disabledColor === 'dark' ? 'invert' : ''}`} alt="not available" />
                   </div>
@@ -103,12 +104,13 @@ project
 
 const Works = () => {
   const [workType, setWorkType] = useState('personal');
+  const reducedMotion = usePrefersReducedMotion();
 
   function onChangeWorkType(worktype) {
     setWorkType(worktype)
     document
-    .getElementById('portfolio')
-    ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      .getElementById('portfolio')
+      ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   return (
@@ -146,18 +148,22 @@ const Works = () => {
           </div>
         </div>
         <div className="mt-10 flex flex-wrap gap-7">
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
-              className={`display: ${project.type === workType ? 'block' : 'hidden'}`}
-            >
-              <ProjectCard
-                key={project.id}
-                project={project}
-              />
-            </motion.div>
-          ))}
+          {projects.map((project, index) => {
+            const timeToShow = reducedMotion ? 0 : 0.5 * index
+
+            return (
+              <motion.div
+                key={index}
+                variants={fadeIn("up", "spring", timeToShow, 0.75)}
+                className={`display: ${project.type === workType ? 'block' : 'hidden'}`}
+              >
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                />
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </>

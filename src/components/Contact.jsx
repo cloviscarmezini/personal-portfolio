@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
-import { SectionWrapper }  from '../hoc'
+import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import { validateEmail } from '../utils/functions'
 
@@ -28,16 +28,16 @@ const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setForm(form=>({
+    setForm(form => ({
       ...form,
       [name]: value
     }))
   }
 
   const validateForm = () => {
-    if(form.name.length < 2) return false;
-    if(!validateEmail(form.email.trim())) return false;
-    if(!form.message) return false;
+    if (form.name.length < 2) return false;
+    if (!validateEmail(form.email.trim())) return false;
+    if (!form.message) return false;
 
     return true;
   }
@@ -45,7 +45,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if(!validateForm()) {
+    if (!validateForm()) {
       toast('All fields are required!', {
         icon: '😅',
       });
@@ -57,7 +57,7 @@ const Contact = () => {
       setIsLoading(true);
 
       const notification = toast.loading('Sending...');
-      
+
       await send(
         emailJsKeys.serviceId,
         emailJsKeys.templateId,
@@ -70,7 +70,7 @@ const Contact = () => {
         },
         emailJsKeys.publicKey
       );
-      
+
       setForm({
         name: '',
         email: '',
@@ -81,7 +81,7 @@ const Contact = () => {
         id: notification
       });
 
-    } catch(error) {
+    } catch (error) {
       toast.error('Whops... Something went wrong', {
         id: notification
       });
@@ -157,7 +157,7 @@ const Contact = () => {
               className="bg-quarter py-3 px-8 w-fit
                 text-white font-bold rounded-xl outline-none focus:outline-blue-500"
             >
-              { isLoading ? 'Sending...' : 'Send' }
+              {isLoading ? 'Sending...' : 'Send'}
             </button>
           </form>
         </div>

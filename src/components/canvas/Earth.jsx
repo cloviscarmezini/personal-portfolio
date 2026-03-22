@@ -4,12 +4,13 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
+import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
 
 const Earth = () => {
   const earth = useGLTF('./planet/scene.gltf');
 
   return (
-    <primitive 
+    <primitive
       object={earth.scene}
       scale={2.5}
       position-y={0}
@@ -18,11 +19,13 @@ const Earth = () => {
   )
 }
 
+
 const EarthCanvas = () => {
+  const reducedMotion = usePrefersReducedMotion();
   return (
     <Canvas
       shadows
-      frameloop='demand'
+      frameloop="demand"
       gl={{
         preserveDrawingBuffer: true
       }}
@@ -35,7 +38,7 @@ const EarthCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          autoRotate
+          autoRotate={!reducedMotion}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
