@@ -13,18 +13,15 @@ import { ProgrammerCanvas } from './canvas';
 import { useTranslation } from "react-i18next";
 import { useExperiment } from "@statsig/react-bindings";
 
-const EXPERIMENT_OPTIONS = {
-  GROUP_A: 'GROUP_A',
-  GROUP_B: 'GROUP_B',
-}
 
-const EXPERIMENT_NAME = 'test_ab'
+const EXPERIMENT_GROUP_NAME = 'test_ab'
+const EXPERIMENT_NAME = 'show_dot_on_name'
 
 const Hero = () => {
   const [translate] = useTranslation();
-  const experiment = useExperiment(EXPERIMENT_NAME);
+  const experiment = useExperiment(EXPERIMENT_GROUP_NAME);
 
-  const selectedExperiment = experiment.get(EXPERIMENT_OPTIONS.GROUP_A, EXPERIMENT_OPTIONS.GROUP_B);
+  const showDotOnName = experiment.get(EXPERIMENT_NAME, false);
 
   return (
     <header
@@ -43,7 +40,7 @@ const Hero = () => {
             <div>
               <h1 className={styles.heroHeadText}>{translate('hero.greetings')} {" "}
                 <span className="text-blue-500">
-                  Clovis {selectedExperiment === EXPERIMENT_OPTIONS.GROUP_A ? '.' : ''}
+                  Clovis {showDotOnName ? '.' : ''}
                 </span>
               </h1>
               <p className={styles.heroSubText}>
