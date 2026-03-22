@@ -11,9 +11,20 @@ import {
 
 import { ProgrammerCanvas } from './canvas';
 import { useTranslation } from "react-i18next";
+import { useExperiment } from "@statsig/react-bindings";
+
+const EXPERIMENT_OPTIONS = {
+  GROUP_A: 'GROUP_A',
+  GROUP_B: 'GROUP_B',
+}
+
+const EXPERIMENT_NAME = 'test_ab'
 
 const Hero = () => {
   const [translate] = useTranslation();
+  const experiment = useExperiment(EXPERIMENT_NAME);
+
+  const selectedExperiment = experiment.get(EXPERIMENT_OPTIONS.GROUP_A, EXPERIMENT_OPTIONS.GROUP_B);
 
   return (
     <header
@@ -32,23 +43,23 @@ const Hero = () => {
             <div>
               <h1 className={styles.heroHeadText}>{translate('hero.greetings')} {" "}
                 <span className="text-blue-500">
-                  Clovis
+                  Clovis {selectedExperiment === EXPERIMENT_OPTIONS.GROUP_A ? '.' : ''}
                 </span>
               </h1>
               <p className={styles.heroSubText}>
-                I'm a programming lover & <br/>
-                technology enthusiastic.<br/>
+                I'm a programming lover & <br />
+                technology enthusiastic.<br />
                 How about a cup of <span className="text-blue-500">coffee?</span>
               </p>
               <div className="mt-2 flex row gap-4">
-                {/* <a className="cursor-pointer" href="https://www.linkedin.com/in/clovis-carmezini-junior-45a445100/" target="_blank">
+                <a className="cursor-pointer" href="https://www.linkedin.com/in/cloviscarmezini/" target="_blank">
                   <div className="flex row items-center gap-2">
-                    <img src={linkedin} className="w-3 invert" alt="linkedin"/>
+                    <img src={linkedin} className="w-3 invert" alt="linkedin" />
                     <p className="text-md">
                       LinkedIn
                     </p>
                   </div>
-                </a> */}
+                </a>
                 <a className="cursor-pointer" href="https://github.com/cloviscarmezini" target="_blank">
                   <div className="flex row items-center gap-2">
                     <img src={githubSvg} className="w-4 invert" alt="github" />
@@ -60,7 +71,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="flex justify-center items-center">
             <ProgrammerCanvas />
           </div>
