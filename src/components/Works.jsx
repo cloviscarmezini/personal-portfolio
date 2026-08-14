@@ -133,7 +133,7 @@ const Works = () => {
       </div>
 
       <div className="mt-5 relative">
-        <div className="bg-primary flex justify-center sticky top-[75px] py-5 z-50">
+        {/* <div className="bg-primary flex justify-center sticky top-[75px] py-5 z-50">
           <div className="rounded-full hover:shadow-card bg-gradient-to-b from-blue-500 to-purple-500">
             <div className="bg-tertiary m-[1px] text-sm text-white leading-none rounded-full inline-flex">
               <button onClick={() => onChangeWorkType('personal')} className={`inline-flex items-center transition-colors duration-300 ease-in focus:outline-none hover:bg-blue-500 rounded-l-full px-4 py-2 ${workType === 'personal' ? 'bg-gradient-to-b from-blue-500 to-purple-500' : ''}`} id="grid">
@@ -146,7 +146,7 @@ const Works = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="mt-10 flex flex-wrap gap-7">
           {projects.map((project, index) => {
             const timeToShow = reducedMotion ? 0 : 0.5 * index
@@ -155,7 +155,7 @@ const Works = () => {
               <motion.div
                 key={index}
                 variants={fadeIn("up", "spring", timeToShow, 0.75)}
-                className={`display: ${project.type === workType ? 'block' : 'hidden'}`}
+                // className={`display: ${project.type === workType ? 'block' : 'hidden'}`}
               >
                 <ProjectCard
                   key={project.id}

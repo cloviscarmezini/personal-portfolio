@@ -32,6 +32,10 @@ import uber from "./projects/uber.png";
 import instagram from "./projects/instagram.png";
 import tinder from "./projects/tinder.png";
 import avell from "./projects/avell.png";
+import onthewall from "./projects/onthewall.png";
+import scarflab from "./projects/scarflab.jpeg";
+import agcalifornia from "./projects/agcalifornia.jpeg";
+import empreenda from "./projects/empreenda.jpeg";
 
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -100,5 +104,9 @@ export {
   lock,
   lock2,
   githubSvg,
-  linkedin
+  linkedin,
+  onthewall,
+  scarflab,
+  agcalifornia,
+  empreenda
 };

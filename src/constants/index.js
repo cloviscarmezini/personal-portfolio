@@ -32,7 +32,11 @@ import {
   chromeIcon,
   github,
   atmaMeditation,
-  avell
+  avell,
+  onthewall,
+  scarflab,
+  agcalifornia,
+  empreenda
 } from "../assets";
 
 export const navLinks = [
@@ -134,53 +138,56 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Tech Lead - Digital Innovation Specialist",
+    title: "Principal Software Engineer",
     company_name: "Vivo - Telefonica",
     icon: logoVivo,
     iconBg: "#ffffff",
     date: "Apr 2023 - current",
     activities: [
-      "As the leader of a meditation app squad, I collaborate in its maintenance, development of new features, problem-solving and enhancements.",
-      "I have also made significant contributions to cost reduction and process improvement, resulting in up to 70% drop in activity execution time.",
-      "Technologies: React Native, MongoDB,  Microservices,  Java,  Node.js with the Nest framework, RabbitMQ,  GCP, BigQuery."
+      "Drove a mobile UI rebuild and architectural modernization, delivering 9 new core features and reducing app failure reports by 97% across comparable periods increasing product stability.",
+      "Led an outsourced team to introduce AI-powered audio transcription and transform the platform's search from title-based results to full-content search, indexing 100% of audio material (500+ characters per item).",
+      "Re-architected a 7-service architecture into 15 domain-oriented microservices to support new product features and enable independent scaling across critical domains.",
+      "Led performance optimization of a legacy content delivery microservice, eliminating data structure bottlenecks, cutting response times by 83% and introducing caching layers to enhance overall platform responsiveness."
     ],
   },
   {
-    title: "Frontend Developer",
+    title: "Senior Frontend Engineer",
     company_name: "eMutua Digital",
     icon: logoEmutua,
     iconBg: "#383E56",
     date: "Sep 2021 - Mar 2023",
     activities: [
-      "Maintenance on e-commerce platform.",
-      "Implementation of new features.",
-      "Maintenance and control of travel App versions, on Google Play and Apple Store.",
-      "Development of layouts and pages.",
-      "Daily, Sprint planning and Sprint review.",
+      "Deployed drag-and-drop storefront builder for an e-commerce platform, enabling full client self-service and reducing the need for dedicated onboarding support by 0%.",
+      "Directed the technical onboarding of the company's largest enterprise client, ensuring seamless implementation and a stable production rollout.",
+      "Implemented four new payment gateway integrations, expanding transaction capabilities and increasing payment flexibility for end customers.",
+      "Partnered with backend and product stakeholders to design scalable frontend solutions, improving system reliability and supporting sustained platform growth."
     ],
   },
   {
-    title: "Software Engineer",
+    title: "Full Stack Software Engineer",
     company_name: "Tag Desenvolvimento",
     icon: logoTag,
     iconBg: "#383E56",
     date: "Feb 2017 - Aug 2021",
     activities: [
-      "Prototyping, requirements analysis, database modeling and coding.",
-      "Development of Applications, APIs, Systems, E-commerces, Platforms, landing pages and websites.",
-      "Application deployment in cloud environments (AWS, Vercel).",
-      "Briefing, alignment and delivery meetings with clients."
+      "Built and launched a full SaaS platform for personal trainers, including backend architecture, subscription website, admin dashboard and mobile apps, owning the product lifecycle from strategy and UX to DevOps and production.",
+      "Created a complete online learning platform for design education, delivering recorded classes, assessments, subscription landing pages and an administrative dashboard from concept to production.",
+      "Delivered an end-to-end restaurant management system with customer mobile app, real-time kitchen communication via WebSockets and an operations dashboard, streamlining order flow and operational efficiency.",
+      "Owned the full software lifecycle across projects, from requirements gathering and system design to deployment and production support, ensuring reliable releases and business continuity.",
+      "Collaborated with cross-functional teams to deliver scalable product features, strengthening system reliability and supporting client growth."
     ],
   },
   {
-    title: "Development Intern",
+    title: "Software Engineer Intern",
     company_name: "SESC SP",
     icon: logoSesc,
     iconBg: "#ffffff",
     date: "Mar 2020 - Dec 2020",
     activities: [
-      "Maintenance of legacy systems.",
-      "Development of new systems."
+      "Modernized a legacy PHP 5.4 codebase to PHP 7.4 with Laravel, refactoring monolithic structures into modular components, improving performance, security standards and long-term maintainability.",
+      "Provided technical support for internal systems, troubleshooting issues and ensuring day-to-day operational stability.",
+      "Performed maintenance and incremental improvements on legacy systems, fixing bugs and implementing small feature adjustments as required.",
+      "Assisted in migrating legacy desktop applications to modern web-based systems, contributing to the transition of existing business workflows to the web."
     ],
   },
 ];
@@ -213,55 +220,6 @@ const testimonials = [
 ];
 
 const projects = [
-  {
-    id: "0968a04c-d84f-4966-8eb6-9debb015e362",
-    name: "One For Two",
-    description: "A fitness app for scheduling classes, accessing workouts, direct instructor communication, and modifying fitness plans.",
-    type: 'personal',
-    tags: [
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Laravel",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next JS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: onefortwo,
-    links: [
-      {
-        url: "https://www.personaisonefortwo.com.br",
-        icon: chromeIcon,
-        color: "bg-white",
-        alt: "Access Website"
-      },
-      {
-        url: "https://play.google.com/store/apps/details?id=com.onefortwo",
-        icon: android,
-        color: "bg-white",
-        alt: "Access Google Play"
-      },
-      {
-        url: "https://apps.apple.com/br/app/one-for-two/id6448317590?l=en",
-        icon: apple,
-        color: "bg-white",
-        alt: "Access Apple Store"
-      },
-      {
-        url: "-",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Website",
-        disabledColor: 'dark',
-        disabled: true
-      },
-    ]
-  },
   {
     id: "bc179a01-700f-4ca4-b020-3d8ba5bc3dd4",
     name: "Atma Meditação",
@@ -329,6 +287,93 @@ const projects = [
     ]
   },
   {
+    id: "0968a04c-d84f-4966-8eb6-9debb015e362",
+    name: "One For Two",
+    description: "A fitness app for scheduling classes, accessing workouts, direct instructor communication, and modifying fitness plans.",
+    type: 'personal',
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Laravel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next JS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: onefortwo,
+    links: [
+      {
+        url: "https://www.personaisonefortwo.com.br",
+        icon: chromeIcon,
+        color: "bg-white",
+        alt: "Access Website"
+      },
+      {
+        url: "https://play.google.com/store/apps/details?id=com.onefortwo",
+        icon: android,
+        color: "bg-white",
+        alt: "Access Google Play"
+      },
+      {
+        url: "https://apps.apple.com/br/app/one-for-two/id6448317590?l=en",
+        icon: apple,
+        color: "bg-white",
+        alt: "Access Apple Store"
+      },
+      {
+        url: "-",
+        icon: github,
+        color: "bg-gray-800",
+        alt: "Access Website",
+        disabledColor: 'dark',
+        disabled: true
+      },
+    ]
+  },
+  {
+    id: "397f566c-1ced-4555-b7c4-4ba8353d47fe",
+    name: "On the Wall",
+    type: 'collaborate',
+    description:
+      "An e-commerce focused on creating frames. The customer can customize the frame in real time.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Laravel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next JS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: onthewall,
+    links: [
+      {
+        url: "https://www.onthewall.com.br",
+        icon: chromeIcon,
+        color: "bg-white",
+        alt: "Access Website"
+      },
+      {
+        url: "-",
+        icon: github,
+        color: "bg-gray-800",
+        alt: "Access Website",
+        disabledColor: 'dark',
+        disabled: true
+      },
+    ]
+  },
+  {
     id: "6c2fd046-7676-46bf-b7cf-bffb50383388",
     name: "Render's Academy",
     type: 'personal',
@@ -352,7 +397,6 @@ const projects = [
         color: "text-orange-500",
       }
     ],
-    deprecated: true,
     image: renders,
     links: [
       {
@@ -391,7 +435,6 @@ const projects = [
         color: "green-text-gradient",
       }
     ],
-    deprecated: true,
     image: freelarest,
     links: [
       {
@@ -400,6 +443,84 @@ const projects = [
         color: "bg-white",
         alt: "Access Website"
       },
+      {
+        url: "",
+        icon: github,
+        color: "bg-gray-800",
+        alt: "Access Website",
+        disabledColor: 'dark',
+        disabled: true
+      },
+    ]
+  },
+  {
+    id: "6b7f9303-621b-433c-b5a3-5883e031c093",
+    name: "Scarf.lab",
+    type: 'collaborate',
+    tags: [
+      {
+        name: "Laravel",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: scarflab,
+    links: [
+      {
+        url: "",
+        icon: github,
+        color: "bg-gray-800",
+        alt: "Access Website",
+        disabledColor: 'dark',
+        disabled: true
+      },
+    ]
+  },
+  {
+    id: "ae103edb-40cf-42dd-b302-c696d72fa37e",
+    name: "Agencia California",
+    type: 'collaborate',
+    tags: [
+      {
+        name: "Laravel",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: agcalifornia,
+    links: [
+      {
+        url: "",
+        icon: github,
+        color: "bg-gray-800",
+        alt: "Access Website",
+        disabledColor: 'dark',
+        disabled: true
+      },
+    ]
+  },
+  {
+    id: "a40e6a42-3536-4fde-b801-c3166bd2def1",
+    name: "Empreenda Soluções",
+    type: 'collaborate',
+    tags: [
+      {
+        name: "Laravel",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: empreenda,
+    links: [
       {
         url: "",
         icon: github,
