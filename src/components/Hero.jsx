@@ -17,7 +17,7 @@ const EXPERIMENT_GROUP_NAME = 'test_ab'
 const EXPERIMENT_NAME = 'show_dot_on_name'
 
 const Hero = () => {
-  const [translate] = useTranslation();
+  const { t } = useTranslation();
   const experiment = useExperiment(EXPERIMENT_GROUP_NAME);
 
   const showDotOnName = experiment.get(EXPERIMENT_NAME, false);
@@ -37,15 +37,15 @@ const Hero = () => {
             </div>
 
             <div>
-              <h1 className={styles.heroHeadText}>{translate('hero.greetings')} {" "}
+              <h1 className={styles.heroHeadText}>{t('hero.greetings')} {" "}
                 <span className="text-blue-500">
                   Clovis {showDotOnName ? '.' : ''}
                 </span>
               </h1>
               <p className={styles.heroSubText}>
-                I'm a programming lover & <br />
-                technology enthusiastic.<br />
-                How about a cup of <span className="text-blue-500">coffee?</span>
+                {t('hero.tagline')} <br />
+                {t('hero.taglineSecond')}<br />
+                {t('hero.coffee')} <span className="text-blue-500">{t('hero.coffeeAccent')}</span>
               </p>
               <div className="mt-2 flex row gap-4">
                 <a className="cursor-pointer" href="https://www.linkedin.com/in/cloviscarmezini/" target="_blank">
@@ -97,7 +97,7 @@ const Hero = () => {
       />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
-        <ScrollDownButton href="#about" ariaLabel="Go to About section" />
+        <ScrollDownButton href="#about" ariaLabel={t('hero.scrollToAbout')} />
       </div>
     </header>
   )

@@ -11,10 +11,8 @@ import i18n from './utils/i18n';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <I18nextProvider i18n={i18n}>
-      <Toaster
-        position="bottom-center"
-      />
+      <Toaster position="bottom-center" />
+      <App />
     </I18nextProvider>
-    <App />
   </React.StrictMode>,
 )

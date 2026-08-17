@@ -1,6 +1,183 @@
 {
-  "hero": {
-    "greetings": "Hi, I'm"
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact",
+    "language": "Language"
   },
-  "teste": "Hi, I'm"
+  "hero": {
+    "greetings": "Hi, I'm",
+    "tagline": "I'm a programming lover &",
+    "taglineSecond": "technology enthusiastic.",
+    "coffee": "How about a cup of",
+    "coffeeAccent": "coffee?",
+    "scrollToAbout": "Go to About section"
+  },
+  "about": {
+    "introduction": "Introduction",
+    "overview": "Overview",
+    "text": "I'm a software developer with experience in TypeScript and JavaScript, and expertise in frameworks like React, Node.js. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems.",
+    "rolesHeading": "My roles and expertise"
+  },
+  "experience": {
+    "subtitle": "What I have done so far",
+    "title": "Work Experience"
+  },
+  "feedbacks": {
+    "subtitle": "What others say",
+    "title": "Testimonials.",
+    "of": "of"
+  },
+  "tech": {
+    "heading": "Technologies I have worked so far"
+  },
+  "works": {
+    "subtitle": "My work",
+    "title": "Projects",
+    "description": "Explore my coding journey through some of my projects. Turning ideas into reality, one line of code at a time."
+  },
+  "contact": {
+    "subtitle": "Get in touch",
+    "title": "Contact",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "yourMessage": "Your Message",
+    "namePlaceholder": "What's your name?",
+    "emailPlaceholder": "What's your email?",
+    "messagePlaceholder": "What do you want to say?",
+    "send": "Send",
+    "sending": "Sending...",
+    "allFieldsRequired": "All fields are required!",
+    "success": "Thank you. I will be back to you as soon as possible.",
+    "error": "Oops... Something went wrong.",
+    "loading": "Sending..."
+  },
+  "services": {
+    "techLead": "Tech Lead",
+    "webDeveloper": "Web Developer",
+    "reactNativeDeveloper": "React Native Developer",
+    "backendDeveloper": "Backend Developer"
+  },
+  "experiences": {
+    "vivo": {
+      "title": "Principal Software Engineer",
+      "date": "Apr 2023 - current",
+      "company": "Vivo - Telefonica",
+      "activities": [
+        "Drove a mobile UI rebuild and architectural modernization, delivering 9 new core features and reducing app failure reports by 97% across comparable periods increasing product stability.",
+        "Led an outsourced team to introduce AI-powered audio transcription and transform the platform's search from title-based results to full-content search, indexing 100% of audio material (500+ characters per item).",
+        "Re-architected a 7-service architecture into 15 domain-oriented microservices to support new product features and enable independent scaling across critical domains.",
+        "Led performance optimization of a legacy content delivery microservice, eliminating data structure bottlenecks, cutting response times by 83% and introducing caching layers to enhance overall platform responsiveness."
+      ]
+    },
+    "emutua": {
+      "title": "Senior Frontend Engineer",
+      "date": "Sep 2021 - Mar 2023",
+      "company": "eMutua Digital",
+      "activities": [
+        "Deployed drag-and-drop storefront builder for an e-commerce platform, enabling full client self-service and reducing the need for dedicated onboarding support by 0%.",
+        "Directed the technical onboarding of the company's largest enterprise client, ensuring seamless implementation and a stable production rollout.",
+        "Implemented four new payment gateway integrations, expanding transaction capabilities and increasing payment flexibility for end customers.",
+        "Partnered with backend and product stakeholders to design scalable frontend solutions, improving system reliability and supporting sustained platform growth."
+      ]
+    },
+    "tag": {
+      "title": "Full Stack Software Engineer",
+      "date": "Feb 2017 - Aug 2021",
+      "company": "Tag Desenvolvimento",
+      "activities": [
+        "Built and launched a full SaaS platform for personal trainers, including backend architecture, subscription website, admin dashboard and mobile apps, owning the product lifecycle from strategy and UX to DevOps and production.",
+        "Created a complete online learning platform for design education, delivering recorded classes, assessments, subscription landing pages and an administrative dashboard from concept to production.",
+        "Delivered an end-to-end restaurant management system with customer mobile app, real-time kitchen communication via WebSockets and an operations dashboard, streamlining order flow and operational efficiency.",
+        "Owned the full software lifecycle across projects, from requirements gathering and system design to deployment and production support, ensuring reliable releases and business continuity.",
+        "Collaborated with cross-functional teams to deliver scalable product features, strengthening system reliability and supporting client growth."
+      ]
+    },
+    "sesc": {
+      "title": "Software Engineer Intern",
+      "date": "Mar 2020 - Dec 2020",
+      "company": "SESC SP",
+      "activities": [
+        "Modernized a legacy PHP 5.4 codebase to PHP 7.4 with Laravel, refactoring monolithic structures into modular components, improving performance, security standards and long-term maintainability.",
+        "Provided technical support for internal systems, troubleshooting issues and ensuring day-to-day operational stability.",
+        "Performed maintenance and incremental improvements on legacy systems, fixing bugs and implementing small feature adjustments as required.",
+        "Assisted in migrating legacy desktop applications to modern web-based systems, contributing to the transition of existing business workflows to the web."
+      ]
+    }
+  },
+  "testimonials": {
+    "saraLee": {
+      "testimonial": "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "name": "Sara Lee",
+      "designation": "CFO",
+      "company": "Acme Co"
+    },
+    "chrisBrown": {
+      "testimonial": "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "name": "Chris Brown",
+      "designation": "COO",
+      "company": "DEF Corp"
+    },
+    "lisaWang": {
+      "testimonial": "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "name": "Lisa Wang",
+      "designation": "CTO",
+      "company": "456 Enterprises"
+    }
+  },
+  "projects": {
+    "atmaMeditacao": {
+      "name": "Atma Meditação",
+      "description": "A meditation, health and wellness app. As a team member (Tech Lead and Developer) I collaborate in several parts of this project."
+    },
+    "avell": {
+      "name": "Avell",
+      "description": "An e-commerce focused on selling high-performance notebooks. As a frontend team member I collaborate in several parts of this project."
+    },
+    "oneForTwo": {
+      "name": "One For Two",
+      "description": "A fitness app for scheduling classes, accessing workouts, direct instructor communication, and modifying fitness plans."
+    },
+    "onTheWall": {
+      "name": "On the Wall",
+      "description": "An e-commerce focused on creating frames. The customer can customize the frame in real time."
+    },
+    "rendersAcademy": {
+      "name": "Render's Academy",
+      "description": "An online courses platform for Cinema 4D, providing users with access to quality educational content."
+    },
+    "freelarest": {
+      "name": "Freelarest",
+      "description": "A platform for publishing and hiring freelancers for bars and restaurants."
+    },
+    "scarfLab": {
+      "name": "Scarf.lab"
+    },
+    "agenciaCalifornia": {
+      "name": "Agencia California"
+    },
+    "empreenda": {
+      "name": "Empreenda Soluções"
+    },
+    "uberClone": {
+      "name": "Uber clone",
+      "description": "A Uber mobile app clone."
+    },
+    "instagramClone": {
+      "name": "Instagram clone",
+      "description": "An Instagram app clone."
+    },
+    "tinderClone": {
+      "name": "Tinder clone",
+      "description": "A Tinder app clone."
+    }
+  },
+  "common": {
+    "notAvailable": "not available",
+    "accessWebsite": "Access Website",
+    "accessGooglePlay": "Access Google Play",
+    "accessAppleStore": "Access Apple Store",
+    "accessGithub": "Access GitHub",
+    "unavailable": "UNAVAILABLE 😢"
+  }
 }

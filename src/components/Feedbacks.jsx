@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { styles } from "../styles";
 
@@ -13,7 +14,8 @@ const FeedbackCard = ({
   testimonial,
   designation,
   company,
-  image
+  image,
+  t
 }) => {
   return (
     <motion.div
@@ -36,7 +38,7 @@ const FeedbackCard = ({
               <span className="blue-text-gradient">@</span>{name}
             </p>
             <p className="mt-1 text-secondary text-[12px]">
-              {designation} of {company}
+              {designation} {t('feedbacks.of')} {company}
             </p>
           </div>
 
@@ -53,6 +55,8 @@ const FeedbackCard = ({
 
 
 const Feedbacks = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="mt-12 bg-quarter rounded-[20px]">
       <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
@@ -60,19 +64,24 @@ const Feedbacks = () => {
           variants={textVariant()}
         >
           <p className={styles.sectionSubText}>
-            What others say
+            {t('feedbacks.subtitle')}
           </p>
           <p className={styles.sectionHeadText}>
-            Testimonials.
+            {t('feedbacks.title')}
           </p>
         </motion.div>
       </div>
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard
-            key={testimonial.name}
+            key={testimonial.nameKey}
             index={index}
-            {...testimonial}
+            name={t(testimonial.nameKey)}
+            testimonial={t(testimonial.testimonialKey)}
+            designation={t(testimonial.designationKey)}
+            company={t(testimonial.companyKey)}
+            image={testimonial.image}
+            t={t}
           />
         ))}
       </div>

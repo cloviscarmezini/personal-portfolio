@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { BallCanvas } from "./canvas";
 
 import { technologies } from "../constants";
@@ -5,10 +6,11 @@ import { SectionWrapper } from "../hoc";
 import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
 const Tech = () => {
+  const { t } = useTranslation();
   const reducedMotion = usePrefersReducedMotion();
   return (
     <>
-      <h3 id="technologies-heading" className="sr-only">Technologies I have worked so far</h3>
+      <h3 id="technologies-heading" className="sr-only">{t('tech.heading')}</h3>
       <ul className="flex flex-row flex-wrap justify-center gap-10" aria-labelledby="technologies-heading">
         {technologies.map(technology => (
           <li

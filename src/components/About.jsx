@@ -1,5 +1,5 @@
-import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 import { styles } from '../styles'
 import { services } from '../constants'
@@ -39,31 +39,30 @@ const ServiceCard = ({ title, icon, index }) => {
 }
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <motion.div
         variants={textVariant()}
       >
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview<span className="text-blue-500" aria-hidden>.</span></h2>
+        <p className={styles.sectionSubText}>{t('about.introduction')}</p>
+        <h2 className={styles.sectionHeadText}>{t('about.overview')}<span className="text-blue-500" aria-hidden>.</span></h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js.
-        I'm a quick learner and collaborate closely with clients
-        to create efficient, scalable, and user-friendly solutions that solve
-        real-world problems.
+        {t('about.text')}
       </motion.p>
-      <h3 id="services-heading" className="sr-only">My roles and expertise</h3>
+      <h3 id="services-heading" className="sr-only">{t('about.rolesHeading')}</h3>
       <ul className="mt-20 flex flex-wrap gap-10" aria-labelledby="services-heading">
         {services.map((service, index) => (
           <ServiceCard
-            key={service.title}
+            key={service.titleKey}
             index={index}
+            title={t(service.titleKey)}
             {...service}
           />
         ))}

@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
@@ -17,6 +18,7 @@ const emailJsKeys = {
 }
 
 const Contact = () => {
+  const { t } = useTranslation();
   const formRef = useRef(null);
   const [form, setForm] = useState({
     name: '',
@@ -46,7 +48,7 @@ const Contact = () => {
     e.preventDefault();
 
     if (!validateForm()) {
-      toast('All fields are required!', {
+      toast(t('contact.allFieldsRequired'), {
         icon: '😅',
       });
 
@@ -56,7 +58,7 @@ const Contact = () => {
     try {
       setIsLoading(true);
 
-      const notification = toast.loading('Sending...');
+      const notification = toast.loading(t('contact.loading'));
 
       await send(
         emailJsKeys.serviceId,
@@ -77,12 +79,12 @@ const Contact = () => {
         message: ''
       });
 
-      toast.success('Thank you. I will will back to you as soon as possible.', {
+      toast.success(t('contact.success'), {
         id: notification
       });
 
     } catch (error) {
-      toast.error('Whops... Something went wrong', {
+      toast.error(t('contact.error'), {
         id: notification
       });
     } finally {
@@ -98,8 +100,8 @@ const Contact = () => {
           variants={slideIn('left', 'tween', 0.2, 1)}
           className="bg-tertiary p-8 rounded-2xl"
         >
-          <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact<span className="text-blue-500">.</span></h3>
+          <p className={styles.sectionSubText}>{t('contact.subtitle')}</p>
+          <h3 className={styles.sectionHeadText}>{t('contact.title')}<span className="text-blue-500">.</span></h3>
 
           <form
             ref={formRef}
@@ -108,14 +110,14 @@ const Contact = () => {
           >
             <label className="flex flex-col" htmlFor="">
               <span className="text-white font-medium mb-4">
-                Your Name
+                {t('contact.yourName')}
               </span>
               <input
                 type="text"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="What's your name?"
+                placeholder={t('contact.namePlaceholder')}
                 className="bg-quarter py-4 px-6
                 placeholder:text-neutral-400 text-white rounded-lg
                   border-none font-medium focus:outline-blue-500"
@@ -123,14 +125,14 @@ const Contact = () => {
             </label>
             <label className="flex flex-col" htmlFor="">
               <span className="text-white font-medium mb-4">
-                Your Email
+                {t('contact.yourEmail')}
               </span>
               <input
                 type="text"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="What's your email?"
+                placeholder={t('contact.emailPlaceholder')}
                 className="bg-quarter py-4 px-6
                 placeholder:text-neutral-400 text-white rounded-lg
                   border-none font-medium focus:outline-blue-500"
@@ -138,14 +140,14 @@ const Contact = () => {
             </label>
             <label className="flex flex-col" htmlFor="">
               <span className="text-white font-medium mb-4">
-                Your Message
+                {t('contact.yourMessage')}
               </span>
               <textarea
                 rows={7}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="What do you want to say?"
+                placeholder={t('contact.messagePlaceholder')}
                 className="bg-quarter py-4 px-6
                 placeholder:text-neutral-400 text-white rounded-lg
                   border-none font-medium focus:outline-blue-500 resize-none"
@@ -157,7 +159,7 @@ const Contact = () => {
               className="bg-quarter py-3 px-8 w-fit
                 text-white font-bold rounded-xl outline-none focus:outline-blue-500"
             >
-              {isLoading ? 'Sending...' : 'Send'}
+              {isLoading ? t('contact.sending') : t('contact.send')}
             </button>
           </form>
         </div>

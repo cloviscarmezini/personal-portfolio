@@ -40,181 +40,111 @@ import {
 } from "../assets";
 
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  { id: "about", titleKey: "nav.about" },
+  { id: "work", titleKey: "nav.work" },
+  { id: "contact", titleKey: "nav.contact" },
 ];
 
 const services = [
-  {
-    title: "Tech Lead",
-    icon: creator,
-    description: ''
-  },
-  {
-    title: "Web Developer",
-    icon: web,
-    description: ""
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-    description: ""
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-    description: ""
-  }
+  { titleKey: "services.techLead", icon: creator, description: "" },
+  { titleKey: "services.webDeveloper", icon: web, description: "" },
+  { titleKey: "services.reactNativeDeveloper", icon: mobile, description: "" },
+  { titleKey: "services.backendDeveloper", icon: backend, description: "" },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Next JS",
-    icon: nextjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "TypeScript", icon: typescript },
+  { name: "React JS", icon: reactjs },
+  { name: "Next JS", icon: nextjs },
+  { name: "Redux Toolkit", icon: redux },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Node JS", icon: nodejs },
+  { name: "MongoDB", icon: mongodb },
+  { name: "Three JS", icon: threejs },
+  { name: "git", icon: git },
+  { name: "figma", icon: figma },
+  { name: "docker", icon: docker },
 ];
 
 const experiences = [
   {
-    title: "Principal Software Engineer",
+    titleKey: "experiences.vivo.title",
     company_name: "Vivo - Telefonica",
     icon: logoVivo,
     iconBg: "#ffffff",
-    date: "Apr 2023 - current",
+    dateKey: "experiences.vivo.date",
     activities: [
-      "Drove a mobile UI rebuild and architectural modernization, delivering 9 new core features and reducing app failure reports by 97% across comparable periods increasing product stability.",
-      "Led an outsourced team to introduce AI-powered audio transcription and transform the platform's search from title-based results to full-content search, indexing 100% of audio material (500+ characters per item).",
-      "Re-architected a 7-service architecture into 15 domain-oriented microservices to support new product features and enable independent scaling across critical domains.",
-      "Led performance optimization of a legacy content delivery microservice, eliminating data structure bottlenecks, cutting response times by 83% and introducing caching layers to enhance overall platform responsiveness."
+      "experiences.vivo.activities.0",
+      "experiences.vivo.activities.1",
+      "experiences.vivo.activities.2",
+      "experiences.vivo.activities.3",
     ],
   },
   {
-    title: "Senior Frontend Engineer",
+    titleKey: "experiences.emutua.title",
     company_name: "eMutua Digital",
     icon: logoEmutua,
     iconBg: "#383E56",
-    date: "Sep 2021 - Mar 2023",
+    dateKey: "experiences.emutua.date",
     activities: [
-      "Deployed drag-and-drop storefront builder for an e-commerce platform, enabling full client self-service and reducing the need for dedicated onboarding support by 0%.",
-      "Directed the technical onboarding of the company's largest enterprise client, ensuring seamless implementation and a stable production rollout.",
-      "Implemented four new payment gateway integrations, expanding transaction capabilities and increasing payment flexibility for end customers.",
-      "Partnered with backend and product stakeholders to design scalable frontend solutions, improving system reliability and supporting sustained platform growth."
+      "experiences.emutua.activities.0",
+      "experiences.emutua.activities.1",
+      "experiences.emutua.activities.2",
+      "experiences.emutua.activities.3",
     ],
   },
   {
-    title: "Full Stack Software Engineer",
+    titleKey: "experiences.tag.title",
     company_name: "Tag Desenvolvimento",
     icon: logoTag,
     iconBg: "#383E56",
-    date: "Feb 2017 - Aug 2021",
+    dateKey: "experiences.tag.date",
     activities: [
-      "Built and launched a full SaaS platform for personal trainers, including backend architecture, subscription website, admin dashboard and mobile apps, owning the product lifecycle from strategy and UX to DevOps and production.",
-      "Created a complete online learning platform for design education, delivering recorded classes, assessments, subscription landing pages and an administrative dashboard from concept to production.",
-      "Delivered an end-to-end restaurant management system with customer mobile app, real-time kitchen communication via WebSockets and an operations dashboard, streamlining order flow and operational efficiency.",
-      "Owned the full software lifecycle across projects, from requirements gathering and system design to deployment and production support, ensuring reliable releases and business continuity.",
-      "Collaborated with cross-functional teams to deliver scalable product features, strengthening system reliability and supporting client growth."
+      "experiences.tag.activities.0",
+      "experiences.tag.activities.1",
+      "experiences.tag.activities.2",
+      "experiences.tag.activities.3",
+      "experiences.tag.activities.4",
     ],
   },
   {
-    title: "Software Engineer Intern",
+    titleKey: "experiences.sesc.title",
     company_name: "SESC SP",
     icon: logoSesc,
     iconBg: "#ffffff",
-    date: "Mar 2020 - Dec 2020",
+    dateKey: "experiences.sesc.date",
     activities: [
-      "Modernized a legacy PHP 5.4 codebase to PHP 7.4 with Laravel, refactoring monolithic structures into modular components, improving performance, security standards and long-term maintainability.",
-      "Provided technical support for internal systems, troubleshooting issues and ensuring day-to-day operational stability.",
-      "Performed maintenance and incremental improvements on legacy systems, fixing bugs and implementing small feature adjustments as required.",
-      "Assisted in migrating legacy desktop applications to modern web-based systems, contributing to the transition of existing business workflows to the web."
+      "experiences.sesc.activities.0",
+      "experiences.sesc.activities.1",
+      "experiences.sesc.activities.2",
+      "experiences.sesc.activities.3",
     ],
   },
 ];
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+    testimonialKey: "testimonials.saraLee.testimonial",
+    nameKey: "testimonials.saraLee.name",
+    designationKey: "testimonials.saraLee.designation",
+    companyKey: "testimonials.saraLee.company",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+    testimonialKey: "testimonials.chrisBrown.testimonial",
+    nameKey: "testimonials.chrisBrown.name",
+    designationKey: "testimonials.chrisBrown.designation",
+    companyKey: "testimonials.chrisBrown.company",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+    testimonialKey: "testimonials.lisaWang.testimonial",
+    nameKey: "testimonials.lisaWang.name",
+    designationKey: "testimonials.lisaWang.designation",
+    companyKey: "testimonials.lisaWang.company",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
@@ -222,401 +152,169 @@ const testimonials = [
 const projects = [
   {
     id: "bc179a01-700f-4ca4-b020-3d8ba5bc3dd4",
-    name: "Atma Meditação",
-    type: 'collaborate',
-    description: "A meditation, health and wellness app. As a team member (Tech Lead and Developer) I collaborate in several parts of this project.",
+    nameKey: "projects.atmaMeditacao.name",
+    type: "collaborate",
+    descriptionKey: "projects.atmaMeditacao.description",
     tags: [
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "React JS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Node-JS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Java",
-        color: "orange-text-gradient",
-      },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "React JS", color: "green-text-gradient" },
+      { name: "Node-JS", color: "pink-text-gradient" },
+      { name: "Java", color: "orange-text-gradient" },
     ],
     image: atmaMeditation,
     links: [
-      {
-        url: "https://www.atmameditacao.com.br",
-        icon: chromeIcon,
-        color: "bg-white",
-        alt: "Access Website"
-      },
-      {
-        url: "https://play.google.com/store/apps/details?id=com.movile.meditation.vivo&hl=pt_BR&gl=US",
-        icon: android,
-        color: "bg-white",
-        alt: "Access Google Play"
-      },
-      {
-        url: "https://apps.apple.com/br/app/atma-medita%C3%A7%C3%A3o-e-bem-estar/id1229827447",
-        icon: apple,
-        color: "bg-white",
-        alt: "Access Apple Store"
-      },
-    ]
+      { url: "https://www.atmameditacao.com.br", icon: chromeIcon, color: "bg-white", altKey: "common.accessWebsite" },
+      { url: "https://play.google.com/store/apps/details?id=com.movile.meditation.vivo&hl=pt_BR&gl=US", icon: android, color: "bg-white", altKey: "common.accessGooglePlay" },
+      { url: "https://apps.apple.com/br/app/atma-medita%C3%A7%C3%A3o-e-bem-estar/id1229827447", icon: apple, color: "bg-white", altKey: "common.accessAppleStore" },
+    ],
   },
   {
     id: "883e01e0-8dcf-42c4-9e20-73d31de689f8",
-    name: "Avell",
-    type: 'collaborate',
-    description: "A e-commerce focused on selling high-performance notebooks. As a frontend team member I collaborate in several parts of this project.",
-    tags: [
-      {
-        name: "React JS",
-        color: "green-text-gradient",
-      }
-    ],
+    nameKey: "projects.avell.name",
+    type: "collaborate",
+    descriptionKey: "projects.avell.description",
+    tags: [{ name: "React JS", color: "green-text-gradient" }],
     image: avell,
-    links: [
-      {
-        url: "https://avell.com.br",
-        icon: chromeIcon,
-        color: "bg-white",
-        alt: "Access Website"
-      }
-    ]
+    links: [{ url: "https://avell.com.br", icon: chromeIcon, color: "bg-white", altKey: "common.accessWebsite" }],
   },
   {
     id: "0968a04c-d84f-4966-8eb6-9debb015e362",
-    name: "One For Two",
-    description: "A fitness app for scheduling classes, accessing workouts, direct instructor communication, and modifying fitness plans.",
-    type: 'personal',
+    nameKey: "projects.oneForTwo.name",
+    type: "personal",
+    descriptionKey: "projects.oneForTwo.description",
     tags: [
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Laravel",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next JS",
-        color: "pink-text-gradient",
-      },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "Laravel", color: "green-text-gradient" },
+      { name: "Next JS", color: "pink-text-gradient" },
     ],
     image: onefortwo,
     links: [
-      {
-        url: "https://www.personaisonefortwo.com.br",
-        icon: chromeIcon,
-        color: "bg-white",
-        alt: "Access Website"
-      },
-      {
-        url: "https://play.google.com/store/apps/details?id=com.onefortwo",
-        icon: android,
-        color: "bg-white",
-        alt: "Access Google Play"
-      },
-      {
-        url: "https://apps.apple.com/br/app/one-for-two/id6448317590?l=en",
-        icon: apple,
-        color: "bg-white",
-        alt: "Access Apple Store"
-      },
-      {
-        url: "-",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Website",
-        disabledColor: 'dark',
-        disabled: true
-      },
-    ]
+      { url: "https://www.personaisonefortwo.com.br", icon: chromeIcon, color: "bg-white", altKey: "common.accessWebsite" },
+      { url: "https://play.google.com/store/apps/details?id=com.onefortwo", icon: android, color: "bg-white", altKey: "common.accessGooglePlay" },
+      { url: "https://apps.apple.com/br/app/one-for-two/id6448317590?l=en", icon: apple, color: "bg-white", altKey: "common.accessAppleStore" },
+      { url: "-", icon: github, color: "bg-gray-800", altKey: "common.accessWebsite", disabledColor: "dark", disabled: true },
+    ],
   },
   {
     id: "397f566c-1ced-4555-b7c4-4ba8353d47fe",
-    name: "On the Wall",
-    type: 'collaborate',
-    description:
-      "An e-commerce focused on creating frames. The customer can customize the frame in real time.",
+    nameKey: "projects.onTheWall.name",
+    type: "collaborate",
+    descriptionKey: "projects.onTheWall.description",
     tags: [
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Laravel",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next JS",
-        color: "pink-text-gradient",
-      },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "Laravel", color: "green-text-gradient" },
+      { name: "Next JS", color: "pink-text-gradient" },
     ],
     image: onthewall,
     links: [
-      {
-        url: "https://www.onthewall.com.br",
-        icon: chromeIcon,
-        color: "bg-white",
-        alt: "Access Website"
-      },
-      {
-        url: "-",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Website",
-        disabledColor: 'dark',
-        disabled: true
-      },
-    ]
+      { url: "https://www.onthewall.com.br", icon: chromeIcon, color: "bg-white", altKey: "common.accessWebsite" },
+      { url: "-", icon: github, color: "bg-gray-800", altKey: "common.accessWebsite", disabledColor: "dark", disabled: true },
+    ],
   },
   {
     id: "6c2fd046-7676-46bf-b7cf-bffb50383388",
-    name: "Render's Academy",
-    type: 'personal',
-    description:
-      "A online courses platform for Cinema 4D, providing users with access to quality educational content.",
+    nameKey: "projects.rendersAcademy.name",
+    type: "personal",
+    descriptionKey: "projects.rendersAcademy.description",
     tags: [
-      {
-        name: "Laravel",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "PHP",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MySql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Template Blade",
-        color: "text-orange-500",
-      }
+      { name: "Laravel", color: "pink-text-gradient" },
+      { name: "PHP", color: "blue-text-gradient" },
+      { name: "MySql", color: "green-text-gradient" },
+      { name: "Template Blade", color: "text-orange-500" },
     ],
     image: renders,
     links: [
-      {
-        url: "https://www.rendersacademy.com.br",
-        icon: chromeIcon,
-        color: "bg-white",
-        alt: "Access Website"
-      },
-      {
-        url: "-",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Website",
-        disabledColor: 'dark',
-        disabled: true
-      },
-    ]
+      { url: "https://www.rendersacademy.com.br", icon: chromeIcon, color: "bg-white", altKey: "common.accessWebsite" },
+      { url: "-", icon: github, color: "bg-gray-800", altKey: "common.accessWebsite", disabledColor: "dark", disabled: true },
+    ],
   },
   {
     id: "964ded32-8053-492d-a9c3-240a8e6870bb",
-    name: "Freelarest",
-    type: 'personal',
-    description:
-      "A platform for publishing and hiring freelancers for bars and restaurants.",
+    nameKey: "projects.freelarest.name",
+    type: "personal",
+    descriptionKey: "projects.freelarest.description",
     tags: [
-      {
-        name: "Laravel",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "PHP",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Next JS",
-        color: "green-text-gradient",
-      }
+      { name: "Laravel", color: "pink-text-gradient" },
+      { name: "PHP", color: "blue-text-gradient" },
+      { name: "Next JS", color: "green-text-gradient" },
     ],
     image: freelarest,
     links: [
-      {
-        url: "https://www.freelarest.com",
-        icon: chromeIcon,
-        color: "bg-white",
-        alt: "Access Website"
-      },
-      {
-        url: "",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Website",
-        disabledColor: 'dark',
-        disabled: true
-      },
-    ]
+      { url: "https://www.freelarest.com", icon: chromeIcon, color: "bg-white", altKey: "common.accessWebsite" },
+      { url: "", icon: github, color: "bg-gray-800", altKey: "common.accessWebsite", disabledColor: "dark", disabled: true },
+    ],
   },
   {
     id: "6b7f9303-621b-433c-b5a3-5883e031c093",
-    name: "Scarf.lab",
-    type: 'collaborate',
+    nameKey: "projects.scarfLab.name",
+    type: "collaborate",
     tags: [
-      {
-        name: "Laravel",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "PHP",
-        color: "blue-text-gradient",
-      }
+      { name: "Laravel", color: "pink-text-gradient" },
+      { name: "PHP", color: "blue-text-gradient" },
     ],
     image: scarflab,
-    links: [
-      {
-        url: "",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Website",
-        disabledColor: 'dark',
-        disabled: true
-      },
-    ]
+    links: [{ url: "", icon: github, color: "bg-gray-800", altKey: "common.accessWebsite", disabledColor: "dark", disabled: true }],
   },
   {
     id: "ae103edb-40cf-42dd-b302-c696d72fa37e",
-    name: "Agencia California",
-    type: 'collaborate',
+    nameKey: "projects.agenciaCalifornia.name",
+    type: "collaborate",
     tags: [
-      {
-        name: "Laravel",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "PHP",
-        color: "blue-text-gradient",
-      }
+      { name: "Laravel", color: "pink-text-gradient" },
+      { name: "PHP", color: "blue-text-gradient" },
     ],
     image: agcalifornia,
-    links: [
-      {
-        url: "",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Website",
-        disabledColor: 'dark',
-        disabled: true
-      },
-    ]
+    links: [{ url: "", icon: github, color: "bg-gray-800", altKey: "common.accessWebsite", disabledColor: "dark", disabled: true }],
   },
   {
     id: "a40e6a42-3536-4fde-b801-c3166bd2def1",
-    name: "Empreenda Soluções",
-    type: 'collaborate',
+    nameKey: "projects.empreenda.name",
+    type: "collaborate",
     tags: [
-      {
-        name: "Laravel",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "PHP",
-        color: "blue-text-gradient",
-      }
+      { name: "Laravel", color: "pink-text-gradient" },
+      { name: "PHP", color: "blue-text-gradient" },
     ],
     image: empreenda,
-    links: [
-      {
-        url: "",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Website",
-        disabledColor: 'dark',
-        disabled: true
-      },
-    ]
+    links: [{ url: "", icon: github, color: "bg-gray-800", altKey: "common.accessWebsite", disabledColor: "dark", disabled: true }],
   },
   {
     id: "3a639afa-0eb2-45c1-9f27-651dfe9f575d",
-    name: "Uber clone",
-    type: 'personal',
-    description:
-      "A Uber mobile app clone.",
+    nameKey: "projects.uberClone.name",
+    type: "personal",
+    descriptionKey: "projects.uberClone.description",
     tags: [
-      {
-        name: "Expo",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Google Maps API",
-        color: "green-text-gradient",
-      }
+      { name: "Expo", color: "pink-text-gradient" },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "Google Maps API", color: "green-text-gradient" },
     ],
     image: uber,
-    links: [
-      {
-        url: "https://github.com/cloviscarmezini/uber-clone",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Github"
-      }
-    ]
+    links: [{ url: "https://github.com/cloviscarmezini/uber-clone", icon: github, color: "bg-gray-800", altKey: "common.accessGithub" }],
   },
   {
     id: "f66b5683-bae1-42db-9811-093dc43cfa96",
-    name: "Instagram clone",
-    type: 'personal',
-    description:
-      "A Instagram app clone.",
+    nameKey: "projects.instagramClone.name",
+    type: "personal",
+    descriptionKey: "projects.instagramClone.description",
     tags: [
-      {
-        name: "Expo",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "React Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Atomic Design",
-        color: "green-text-gradient",
-      }
+      { name: "Expo", color: "pink-text-gradient" },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "Atomic Design", color: "green-text-gradient" },
     ],
     image: instagram,
-    links: [
-      {
-        url: "https://github.com/cloviscarmezini/instagram-clone",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Github"
-      }
-    ]
+    links: [{ url: "https://github.com/cloviscarmezini/instagram-clone", icon: github, color: "bg-gray-800", altKey: "common.accessGithub" }],
   },
   {
     id: "f66b5683-bae1-42db-9811-093dc43cfa96",
-    name: "Tinder clone",
-    type: 'personal',
-    description:
-      "A Tinder app clone.",
+    nameKey: "projects.tinderClone.name",
+    type: "personal",
+    descriptionKey: "projects.tinderClone.description",
     tags: [
-      {
-        name: "Swift",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Storyboard",
-        color: "green-text-gradient",
-      }
+      { name: "Swift", color: "pink-text-gradient" },
+      { name: "Storyboard", color: "green-text-gradient" },
     ],
     image: tinder,
-    links: [
-      {
-        url: "https://github.com/cloviscarmezini/tinder-clone-ios",
-        icon: github,
-        color: "bg-gray-800",
-        alt: "Access Github"
-      }
-    ]
-  }
+    links: [{ url: "https://github.com/cloviscarmezini/tinder-clone-ios", icon: github, color: "bg-gray-800", altKey: "common.accessGithub" }],
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

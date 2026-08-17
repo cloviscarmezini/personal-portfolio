@@ -1,6 +1,183 @@
 {
-  "hero": {
-    "greetings": "Olá, eu sou"
+  "nav": {
+    "about": "Sobre",
+    "work": "Trabalho",
+    "contact": "Contato",
+    "language": "Idioma"
   },
-  "teste": "Olá, eu sou"
+  "hero": {
+    "greetings": "Olá, eu sou",
+    "tagline": "Sou apaixonado por programação &",
+    "taglineSecond": "entusiasta de tecnologia.",
+    "coffee": "Que tal uma xícara de",
+    "coffeeAccent": "café?",
+    "scrollToAbout": "Ir para a seção Sobre"
+  },
+  "about": {
+    "introduction": "Introdução",
+    "overview": "Visão geral",
+    "text": "Sou um desenvolvedor de software com experiência em TypeScript e JavaScript, além de expertise em frameworks como React e Node.js. Sou uma pessoa que aprende rapidamente e colaboro de perto com clientes para criar soluções eficientes, escaláveis e amigáveis ao usuário que resolvem problemas reais.",
+    "rolesHeading": "Minhas funções e especialidades"
+  },
+  "experience": {
+    "subtitle": "O que tenho feito até agora",
+    "title": "Experiência profissional"
+  },
+  "feedbacks": {
+    "subtitle": "O que os outros dizem",
+    "title": "Depoimentos.",
+    "of": "de"
+  },
+  "tech": {
+    "heading": "Tecnologias com as quais já trabalhei"
+  },
+  "works": {
+    "subtitle": "Meu trabalho",
+    "title": "Projetos",
+    "description": "Explore minha jornada de desenvolvimento por meio de alguns dos meus projetos. Transformando ideias em realidade, uma linha de código por vez."
+  },
+  "contact": {
+    "subtitle": "Entre em contato",
+    "title": "Contato",
+    "yourName": "Seu nome",
+    "yourEmail": "Seu e-mail",
+    "yourMessage": "Sua mensagem",
+    "namePlaceholder": "Qual é o seu nome?",
+    "emailPlaceholder": "Qual é o seu e-mail?",
+    "messagePlaceholder": "O que você deseja dizer?",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "allFieldsRequired": "Todos os campos são obrigatórios!",
+    "success": "Obrigado. Vou retornar para você assim que possível.",
+    "error": "Ops... Algo deu errado.",
+    "loading": "Enviando..."
+  },
+  "services": {
+    "techLead": "Tech Lead",
+    "webDeveloper": "Desenvolvedor Web",
+    "reactNativeDeveloper": "Desenvolvedor React Native",
+    "backendDeveloper": "Desenvolvedor Backend"
+  },
+  "experiences": {
+    "vivo": {
+      "title": "Engenheiro de Software Principal",
+      "date": "Abr 2023 - atual",
+      "company": "Vivo - Telefonica",
+      "activities": [
+        "Liderei a reconstrução da interface móvel e a modernização da arquitetura, entregando 9 novos recursos centrais e reduzindo os relatórios de falhas do app em 97% em períodos comparáveis, aumentando a estabilidade do produto.",
+        "Dirigi uma equipe terceirizada para introduzir transcrição de áudio com IA e transformar a busca da plataforma de resultados baseados em títulos para busca em conteúdo completo, indexando 100% do material de áudio (mais de 500 caracteres por item).",
+        "Reestruturei uma arquitetura de 7 serviços em 15 microsserviços orientados a domínio para apoiar novos recursos do produto e permitir escalonamento independente em domínios críticos.",
+        "Liderei a otimização de desempenho de um microsserviço legado de entrega de conteúdo, eliminando gargalos de estrutura de dados, reduzindo os tempos de resposta em 83% e introduzindo camadas de cache para melhorar a responsividade geral da plataforma."
+      ]
+    },
+    "emutua": {
+      "title": "Engenheiro Frontend Sênior",
+      "date": "Set 2021 - Mar 2023",
+      "company": "eMutua Digital",
+      "activities": [
+        "Implantei um construtor de storefront com arrastar e soltar para uma plataforma de e-commerce, permitindo autogestão completa do cliente e reduzindo a necessidade de suporte dedicado de onboarding em 0%.",
+        "Dirigi o onboarding técnico do maior cliente corporativo da empresa, garantindo implementação sem problemas e rollout estável em produção.",
+        "Implementei quatro novas integrações de gateway de pagamento, expandindo as capacidades de transação e aumentando a flexibilidade de pagamento para os clientes finais.",
+        "Colaborei com stakeholders de backend e produto para criar soluções frontend escaláveis, melhorando a confiabilidade do sistema e apoiando o crescimento sustentável da plataforma."
+      ]
+    },
+    "tag": {
+      "title": "Engenheiro de Software Full Stack",
+      "date": "Fev 2017 - Ago 2021",
+      "company": "Tag Desenvolvimento",
+      "activities": [
+        "Construi e lancei uma plataforma SaaS completa para personal trainers, incluindo arquitetura de backend, site de assinatura, dashboard administrativo e aplicativos móveis, assumindo o ciclo de vida do produto desde estratégia e UX até DevOps e produção.",
+        "Criei uma plataforma completa de aprendizagem online para educação em design, entregando aulas gravadas, avaliações, landing pages de assinatura e dashboard administrativo do conceito à produção.",
+        "Entreguei um sistema completo de gestão de restaurante com app mobile para clientes, comunicação em tempo real da cozinha via WebSockets e dashboard operacional, otimizando o fluxo de pedidos e a eficiência operacional.",
+        "Assumi o ciclo completo de software em projetos, desde levantamento de requisitos e design de sistemas até deploy e suporte em produção, garantindo releases confiáveis e continuidade de negócio.",
+        "Colaborei com equipes multifuncionais para entregar recursos escaláveis, fortalecendo a confiabilidade do sistema e apoiando o crescimento dos clientes."
+      ]
+    },
+    "sesc": {
+      "title": "Estagiário de Engenharia de Software",
+      "date": "Mar 2020 - Dez 2020",
+      "company": "SESC SP",
+      "activities": [
+        "Modernizei uma base de código legado em PHP 5.4 para PHP 7.4 com Laravel, refatorando estruturas monolíticas em componentes modulares, melhorando desempenho, padrões de segurança e manutenção a longo prazo.",
+        "Forneci suporte técnico para sistemas internos, solucionando problemas e garantindo estabilidade operacional no dia a dia.",
+        "Realizei manutenção e melhorias incrementais em sistemas legados, corrigindo bugs e implementando pequenos ajustes de recursos conforme necessário.",
+        "Auxiliei na migração de aplicativos desktop legados para sistemas web modernos, contribuindo para a transição dos fluxos de negócio existentes para a web."
+      ]
+    }
+  },
+  "testimonials": {
+    "saraLee": {
+      "testimonial": "Achei impossível criar um site tão bonito quanto nosso produto, mas o Rick provou o contrário.",
+      "name": "Sara Lee",
+      "designation": "CFO",
+      "company": "Acme Co"
+    },
+    "chrisBrown": {
+      "testimonial": "Nunca conheci um desenvolvedor web que se importasse tanto com o sucesso dos clientes como o Rick.",
+      "name": "Chris Brown",
+      "designation": "COO",
+      "company": "DEF Corp"
+    },
+    "lisaWang": {
+      "testimonial": "Depois que o Rick otimizou nosso site, nosso tráfego aumentou 50%. Não temos como agradecê-lo o suficiente!",
+      "name": "Lisa Wang",
+      "designation": "CTO",
+      "company": "456 Enterprises"
+    }
+  },
+  "projects": {
+    "atmaMeditacao": {
+      "name": "Atma Meditação",
+      "description": "Um aplicativo de meditação, saúde e bem-estar. Como membro da equipe (Tech Lead e Desenvolvedor), colaboro em várias partes deste projeto."
+    },
+    "avell": {
+      "name": "Avell",
+      "description": "Um e-commerce focado na venda de notebooks de alto desempenho. Como membro da equipe de frontend, colaborei em diversas partes deste projeto."
+    },
+    "oneForTwo": {
+      "name": "One For Two",
+      "description": "Um aplicativo de fitness para agendar aulas, acessar treinos, se comunicar diretamente com instrutores e modificar planos de treino."
+    },
+    "onTheWall": {
+      "name": "On the Wall",
+      "description": "Um e-commerce focado em criação de molduras. O cliente pode personalizar a moldura em tempo real."
+    },
+    "rendersAcademy": {
+      "name": "Render's Academy",
+      "description": "Uma plataforma de cursos online para Cinema 4D, oferecendo acesso a conteúdo educacional de qualidade."
+    },
+    "freelarest": {
+      "name": "Freelarest",
+      "description": "Uma plataforma para publicar e contratar freelancers para bares e restaurantes."
+    },
+    "scarfLab": {
+      "name": "Scarf.lab"
+    },
+    "agenciaCalifornia": {
+      "name": "Agencia California"
+    },
+    "empreenda": {
+      "name": "Empreenda Soluções"
+    },
+    "uberClone": {
+      "name": "Uber clone",
+      "description": "Um clone do aplicativo móvel da Uber."
+    },
+    "instagramClone": {
+      "name": "Instagram clone",
+      "description": "Um clone do aplicativo Instagram."
+    },
+    "tinderClone": {
+      "name": "Tinder clone",
+      "description": "Um clone do aplicativo Tinder."
+    }
+  },
+  "common": {
+    "notAvailable": "não disponível",
+    "accessWebsite": "Acessar site",
+    "accessGooglePlay": "Acessar Google Play",
+    "accessAppleStore": "Acessar Apple Store",
+    "accessGithub": "Acessar GitHub",
+    "unavailable": "INDISPONÍVEL 😢"
+  }
 }

@@ -1,6 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { styles } from "../styles";
 import { experiences } from "../constants";
@@ -10,7 +11,7 @@ import { textVariant } from "../utils/motion";
 import "react-vertical-timeline-component/style.min.css";
 import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
-const ExperienceCard = ({ experience, index }) => {
+const ExperienceCard = ({ experience, index, t }) => {
   return (
     <VerticalTimelineElement
       className="timeline-element"
@@ -22,7 +23,7 @@ const ExperienceCard = ({ experience, index }) => {
       contentArrowStyle={{
         borderRight: "7px solid #09033A"
       }}
-      date={experience.date}
+      date={t(experience.dateKey)}
       iconStyle={{
         background: experience.iconBg
       }}
@@ -38,7 +39,7 @@ const ExperienceCard = ({ experience, index }) => {
     >
       <div>
         <h3 className="text-white text-[24px] font-bold">
-          {experience.title}
+          {t(experience.titleKey)}
         </h3>
         <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>
           {experience.company_name}
@@ -46,12 +47,12 @@ const ExperienceCard = ({ experience, index }) => {
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.activities.map((activity, index) => (
+        {experience.activities.map((activityKey, index) => (
           <li
             key={`experience-point-${index}`}
             className="text-white-100 text-[14px] pl-1 tracking-wider"
           >
-            {activity}
+            {t(activityKey)}
           </li>
         ))}
       </ul>
@@ -60,14 +61,15 @@ const ExperienceCard = ({ experience, index }) => {
 }
 
 const Experience = () => {
+  const { t } = useTranslation();
   const reducedMotion = usePrefersReducedMotion();
   return (
     <>
       <motion.div
         variants={textVariant()}
       >
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience<span className="text-blue-500">.</span></h2>
+        <p className={styles.sectionSubText}>{t('experience.subtitle')}</p>
+        <h2 className={styles.sectionHeadText}>{t('experience.title')}<span className="text-blue-500">.</span></h2>
       </motion.div>
 
       <div
@@ -75,7 +77,7 @@ const Experience = () => {
       >
         <VerticalTimeline animate={!reducedMotion}>
           {experiences.map((experience, index) => (
-            <ExperienceCard experience={experience} index={index} />
+            <ExperienceCard key={experience.company_name} experience={experience} index={index} t={t} />
           ))}
         </VerticalTimeline>
       </div>
